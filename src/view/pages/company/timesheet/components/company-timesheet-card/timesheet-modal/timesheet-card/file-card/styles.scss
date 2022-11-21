@@ -1,0 +1,87 @@
+.file-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 14px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid var(--bg-color-17);
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+}
+
+.file-card--full-width {
+  width: 100%;
+}
+
+.file-card__file-info {
+  margin-right: auto;
+  margin-left: 10px;
+  font-weight: var(--bold-fs);
+}
+
+.file-card__name {
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--primary-color);
+  @media (max-width: 500px) {
+    width: 70px;
+  }
+}
+
+.file-card__size {
+  font-size: 14px;
+  color: var(--secondary-color);
+  font-weight: var(--regular-fs);
+}
+
+.file-card__download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  color: var(--primary-color);
+  background-color: var(--color-8);
+  transition-duration: 0.2s;
+  &:hover {
+    background-color: var(--bg-secondary-dark-color);
+  }
+}
+
+.file-card__file-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 38px;
+  padding: 10px 5px;
+  border-radius: 6px;
+
+  & span {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+  }
+}
+
+.file-card__file-type--doc,
+.file-card__file-type--docx {
+  background-color: #52b7e3;
+}
+
+.file-card__file-type--jpg,
+.file-card__file-type--jpeg {
+  background-color: #fe8e6b;
+}
+
+.file-card__file-type--pdf {
+  background-color: #6752e3;
+}
+
+.file-card__file-type--png {
+  background-color: #64daaf;
+}

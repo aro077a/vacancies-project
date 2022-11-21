@@ -1,0 +1,121 @@
+@import '~/view/styles/mixins';
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+  @include mobile {
+    margin-bottom: 5px;
+  }
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--primary-color);
+
+  > span {
+    color: var(--secondary-color);
+  }
+}
+
+.page__title--edit-mode {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.page__number {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 47px;
+  padding-top: 2px;
+  color: var(--primary-color);
+
+  > span {
+    color: var(--secondary-color);
+  }
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+.page__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.page__editor {
+  margin-bottom: 50px;
+
+  @include mobile {
+    margin-bottom: 45px;
+  }
+}
+
+.page__separator {
+  height: 1px;
+  transform: scaleX(1.5);
+  background-color: var(--border-light-color);
+  margin-bottom: 30px;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.page__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page__footer--edit-mode {
+  justify-content: flex-end;
+
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+}
+
+.page__footer-back-button {
+  margin-right: 7px;
+}
+
+.page__delete-button {
+  width: 172px;
+  margin-right: 15px;
+
+  @include mobile {
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 15px;
+  }
+}
+
+.page__save-changes-button {
+  width: 172px;
+
+  @include mobile {
+    width: 100%;
+  }
+}

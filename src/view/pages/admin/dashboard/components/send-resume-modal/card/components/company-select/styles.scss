@@ -1,0 +1,40 @@
+.wrapper {
+  margin-bottom: 20px;
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  padding: 9.5px 20px;
+  border: 1px solid var(--border-color-4);
+  border-radius: 6px;
+  width: 100%;
+}
+
+.body--error {
+  border-color: var(--error-color);
+}
+
+.label {
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 16px;
+  color: var(--muted-text-color);
+}
+
+.custom-select {
+  width: 100%;
+}
+
+.error-message {
+  display: flex;
+  align-items: flex-start;
+  font-size: var(--error-message-font-size);
+  line-height: var(--error-message-line-height);
+  color: var(--error-color);
+  margin-top: 2px;
+  position: absolute;
+}

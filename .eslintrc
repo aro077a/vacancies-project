@@ -1,0 +1,70 @@
+{
+  "extends": ["plugin:@typescript-eslint/recommended", "airbnb", "airbnb/hooks", "prettier"],
+  "plugins": ["@typescript-eslint", "unused-imports", "simple-import-sort", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/array-type": ["error", { "default": "array" }],
+    "no-bitwise": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "no-plusplus": "off",
+    "no-redeclare": "off",
+    "@typescript-eslint/no-redeclare": "error",
+    "react/no-array-index-key": "warn",
+    "arrow-body-style": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "react/require-default-props": "off",
+    "prefer-destructuring": "off",
+    "react/button-has-type": "off",
+    "no-underscore-dangle": "off",
+    "prettier/prettier": "error",
+    "dot-notation": "off",
+    "no-param-reassign": "off",
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "unused-imports/no-unused-imports-ts": "error",
+    "sort-imports": "off",
+    "import/order": "off",
+    "import/no-duplicates": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/camelcase": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": ["error", "never"],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".tsx", ".jsx"]
+      }
+    ],
+    "no-undef": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "max-len": ["error", 120],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["../*"]
+      }
+    ],
+    "react/no-unescaped-entities": "off",
+    "prefer-arrow-callback": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-nested-ternary": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}

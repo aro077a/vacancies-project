@@ -1,0 +1,28 @@
+@import '~/view/styles/mixins';
+
+.card {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 9px);
+  padding: 20px 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  font-size: 16px;
+  color: #2c3453;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.card__id {
+  margin-right: 18px;
+  opacity: 0.3;
+  line-height: 32px;
+}
+
+.card__text {
+  line-height: 22px;
+}

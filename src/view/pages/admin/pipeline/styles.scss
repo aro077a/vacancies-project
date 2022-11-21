@@ -1,0 +1,27 @@
+.page__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 0 50px;
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--secondary-text-color);
+}
+
+.page__filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  height: 64px;
+  column-gap: 15px;
+  padding: 0 50px;
+  margin-bottom: 10px;
+}
+
+.page__reset-btn {
+  height: 100%;
+}

@@ -1,0 +1,89 @@
+.modal-task,
+.modal-task-edit {
+  width: 625px;
+  padding: 40px;
+  &__textarea {
+    margin: 20px 0;
+  }
+  &__date-picker {
+    margin-top: 20px;
+  }
+  &__priorities {
+    margin-top: 20px;
+    &-priority {
+      font-size: 16px;
+      line-height: 20px;
+      color: #706f91;
+    }
+    &-buttons {
+      display: flex;
+      gap: 11px;
+      margin-top: 10px;
+      &-button {
+        border: 1px solid var(--border-light-color);
+        background-color: var(--secondary-text-color);
+        color: var(--primary-color);
+        &:hover {
+          background-color: var(--secondary-text-color);
+        }
+      }
+      &-button-high,
+      &-button-medium,
+      &-button-low {
+        background-color: var(--secondary-text-color);
+        color: var(--primary-color);
+        border: 1px solid var(--border-light-color);
+      }
+
+      &-button-high {
+        &:hover {
+          background-color: var(--color-11);
+          color: var(--secondary-text-color);
+        }
+      }
+      &-button-high--active {
+        background-color: var(--color-11);
+        color: var(--secondary-text-color);
+        &:hover {
+          background-color: var(--color-11);
+          color: var(--secondary-text-color);
+        }
+      }
+      &-button-medium {
+        &:hover {
+          background-color: var(--accent-color);
+          color: var(--secondary-text-color);
+        }
+      }
+      &-button-medium--active {
+        background-color: var(--accent-color);
+        color: var(--secondary-text-color);
+        &:hover {
+          background-color: var(--accent-color);
+          color: var(--secondary-text-color);
+        }
+      }
+      &-button-low {
+        &:hover {
+          background-color: var(--color-21);
+          color: var(--secondary-text-color);
+        }
+      }
+      &-button-low--active {
+        background-color: var(--color-21);
+        color: var(--secondary-text-color);
+        &:hover {
+          background-color: var(--color-21);
+          color: var(--secondary-text-color);
+        }
+      }
+    }
+  }
+  &__submit-btn {
+    width: 100%;
+    margin-top: 46px;
+  }
+}
+.modal-task-edit {
+  min-height: 54vh;
+}

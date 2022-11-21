@@ -1,0 +1,103 @@
+.card {
+  width: calc(33% - 5px);
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid var(--bg-color-17);
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__position-name {
+  max-width: 134px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: var(--bold-fs);
+  color: var(--primary-color);
+}
+
+.card__company-name {
+  max-width: 134px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--secondary-color);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.card__footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.card__footer:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 115%;
+  height: 1px;
+  background-color: var(--bg-color-17);
+}
+
+.card__show-pipeline-btn {
+  width: 50%;
+  color: var(--bg-primary-color);
+  font-weight: var(--bold-fs);
+  font-size: 12px;
+  transition-duration: 0.2s;
+
+  &:hover {
+    color: #5956e0;
+  }
+}
+
+.card__unmatch-button {
+  width: 50%;
+  color: var(--bg-danger-color);
+  font-weight: var(--bold-fs);
+  font-size: 12px;
+  transition-duration: 0.2s;
+
+  &:hover {
+    color: #f43636;
+  }
+}
+
+.card__middledot {
+  font-size: 12px;
+}
+
+.card__vertical-separator {
+  position: relative;
+  top: 2px;
+  color: var(--bg-color-17);
+}
+
+.card__body {
+  margin-right: 12px;
+}
+
+.card__match-status {
+  display: list-item;
+  margin: 10px 0 16px 18px;
+  color: var(--bg-color-6);
+  font-size: 12px;
+}
+
+.card__match-procentage,
+.card__date {
+  color: var(--secondary-color);
+  font-size: 12px;
+  text-align: right;
+}

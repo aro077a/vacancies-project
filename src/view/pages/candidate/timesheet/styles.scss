@@ -1,0 +1,86 @@
+.page {
+  &__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      @media (max-width: 800px) {
+        width: 125px;
+        height: 45px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: var(--h1-font-size);
+    line-height: var(--h1-line-height);
+    color: var(--primary-text-color);
+    @media (max-width: 800px) {
+      color: var(--primary-color);
+    }
+  }
+  &__timesheet {
+    margin-top: 27px;
+    &-header {
+      display: grid;
+      grid-template-columns: 18% 13% 12% 10% 11% 16% 10% auto;
+      justify-content: flex-start;
+      padding: 15px 0px 16px 40px;
+      align-items: center;
+      color: var(--secondary-color);
+      font-size: 14px;
+      @media (max-width: 800px) {
+        grid-template-columns: 45% 22% auto;
+        padding: 15px 0px 16px 15px;
+      }
+      &-company-name,
+      &-status,
+      &-total-hours,
+      &-in-total {
+        display: flex;
+        align-items: center;
+        &-arrow {
+          margin-left: 5px;
+          width: 10px;
+          height: 10px;
+        }
+      }
+      @media (max-width: 800px) {
+        &-rate,
+        &-job-position,
+        &-contract,
+        &-in-total,
+        &-total-hours {
+          display: none;
+        }
+        &-company-name,
+        &-status,
+        &-time {
+          font-size: 12px;
+        }
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background-color: var(--secondary-text-color);
+      &-not-found {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 10vh;
+        background-color: var(--bg-color-28);
+      }
+      &-items {
+        &-loader {
+          width: 100%;
+          min-height: 10vh;
+          background-color: var(--bg-color-28);
+        }
+      }
+    }
+  }
+}

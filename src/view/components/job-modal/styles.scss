@@ -1,0 +1,70 @@
+.modal {
+  width: 45%;
+  min-width: 806px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    min-width: initial;
+  }
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.modal__company {
+  display: flex;
+  align-items: center;
+}
+
+.modal__company-info {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.modal__company-image {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  object-fit: contain;
+  margin-right: 18px;
+}
+
+.modal__job-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--primary-color);
+}
+
+.modal__company--name {
+  font-weight: 600;
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  color: var(--primary-color);
+}
+
+.modal__edit-job-button {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.modal__edit-job-button-icon {
+  width: 12px;
+  height: 18px;
+  margin-right: 7px;
+}
+
+.modal__tabs {
+  overflow-x: initial;
+  margin-bottom: 30px;
+}

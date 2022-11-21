@@ -1,0 +1,107 @@
+kind: pipeline
+name: Foundya Web App
+
+steps:
+  # ------------------------------------------------------------------------------
+
+  - name: Build Development
+    image: kudato/baseimage:node12
+    commands:
+      - npm install --quiet
+      - npm run build
+    environment:
+      API_URL: https://cv-back-dev.appelloproject.xyz/
+    when:
+      branch: dev
+      event:
+        - push
+        - pull_request
+
+  - name: Deploy Development to S3 & Invalidate CloudFront Cache
+    image: samepagelabs/awscli:latest
+    environment:
+      AWS_ACCESS_KEY_ID:
+        from_secret: aws_access_key_id
+      AWS_SECRET_ACCESS_KEY:
+        from_secret: aws_secret_access_key
+      S3_URL: s3://foundya-front-dev
+      CDN_DISTRIBUTION_ID: E2TQZTP2IVK5JT
+    commands:
+      - aws s3 rm $S3_URL/previous --recursive
+      - aws s3 mv $S3_URL/latest $S3_URL/previous --recursive
+      - aws s3 sync ./build $S3_URL/latest
+      - aws cloudfront create-invalidation --distribution-id $CDN_DISTRIBUTION_ID --paths "/*"
+    when:
+      branch: dev
+      event:
+        - push
+      # - pull_request
+
+  # ------------------------------------------------------------------------------
+
+  - name: Build Staging
+    image: kudato/baseimage:node12
+    commands:
+      - npm install --quiet
+      - npm run build
+    environment:
+      API_URL: https://cv-back-stage.appelloproject.xyz/
+    when:
+      branch: stage
+      event:
+        - push
+        - pull_request
+
+  - name: Deploy Staging to S3 & Invalidate CloudFront Cache
+    image: samepagelabs/awscli:latest
+    environment:
+      AWS_ACCESS_KEY_ID:
+        from_secret: aws_access_key_id
+      AWS_SECRET_ACCESS_KEY:
+        from_secret: aws_secret_access_key
+      S3_URL: s3://foundya-front-stage
+      CDN_DISTRIBUTION_ID: EI1STEOGK18CR
+    commands:
+      - aws s3 rm $S3_URL/previous --recursive
+      - aws s3 mv $S3_URL/latest $S3_URL/previous --recursive
+      - aws s3 sync ./build $S3_URL/latest
+      - aws cloudfront create-invalidation --distribution-id $CDN_DISTRIBUTION_ID --paths "/*"
+    when:
+      branch: stage
+      event:
+        - push
+      # - pull_request
+# # ------------------------------------------------------------------------------
+
+  - name: Build Production
+    image: kudato/baseimage:node12
+    commands:
+    - npm install --quiet
+    - npm run build
+    environment:
+      API_URL: https://back.timbyr.tech/
+    when:
+      branch: master
+      event:
+      - push
+      - pull_request
+
+  - name: Deploy Production to S3 & Invalidate CloudFront Cache
+    image: samepagelabs/awscli:latest
+    environment:
+      AWS_ACCESS_KEY_ID:
+        from_secret: bp_aws_access_key_id # add respective client's AWS IAM keys
+      AWS_SECRET_ACCESS_KEY:
+        from_secret: bp_aws_secret_access_key # add respective client's AWS IAM keys
+      S3_URL: s3://foundya-front-prod
+      CDN_DISTRIBUTION_ID: E2F1BSHEMF489B
+    commands:
+    - aws s3 rm $S3_URL/previous --recursive
+    - aws s3 mv $S3_URL/latest $S3_URL/previous --recursive
+    - aws s3 sync ./build $S3_URL/latest
+    - aws cloudfront create-invalidation --distribution-id $CDN_DISTRIBUTION_ID --paths "/*"
+    when:
+      branch: master
+      event:
+      - push
+      # - pull_request

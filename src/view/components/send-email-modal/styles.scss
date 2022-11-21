@@ -1,0 +1,95 @@
+.modal {
+  width: 605px;
+
+  &__input {
+    margin-top: 24px;
+  }
+}
+
+.modal__textarea {
+  height: 30vh;
+}
+
+.modal__submit-btn {
+  width: 100%;
+}
+
+.modal__message-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.modal__message-label {
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+  color: var(--muted-text-color);
+}
+
+.modal-message__body-header-add {
+  color: var(--accent-color);
+  cursor: pointer;
+  span {
+    color: var(--accent-color);
+    font-size: var(--h4-font-size);
+    font-weight: 600;
+  }
+}
+
+.modal-message__body-image-wrapper {
+  display: grid;
+  align-items: center;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  margin-bottom: 30px;
+}
+
+.modal-message__body-image-content {
+  position: relative;
+  width: 127px;
+  height: 102px;
+  border-radius: 6px;
+  margin-top: 12px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    opacity: 0.21;
+  }
+  svg {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+}
+
+.modal__company-video {
+  width: 127px;
+  height: 103px;
+}
+
+.modal__company-image--no-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.modal__company-image--pdf {
+  background-color: #6752e3;
+}
+
+.modal__company-image--doc,
+.modal__company-image--docx {
+  background-color: #52b7e3;
+}

@@ -1,0 +1,31 @@
+.select__wrapper {
+  width: 64%;
+  margin-bottom: 20px;
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+}
+
+.select__body {
+  display: flex;
+  align-items: center;
+  padding: 9.5px 20px;
+  border: 1px solid var(--border-color-4);
+  border-radius: 6px;
+  width: 100%;
+}
+
+.select__wrapper:first-of-type {
+  margin-right: 15px;
+}
+
+.select__label {
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-size: 16px;
+  color: var(--muted-text-color);
+}
+
+.select__custom-select {
+  width: 100%;
+}

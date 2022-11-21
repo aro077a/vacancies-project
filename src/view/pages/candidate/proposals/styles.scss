@@ -1,0 +1,41 @@
+@import '~/view/styles/mixins';
+
+.page__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 0 50px;
+
+  @include mobile {
+    padding: 0 20px;
+  }
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--secondary-text-color);
+}
+
+.page__tabs {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  column-gap: 15px;
+  padding: 0 50px;
+
+  @include mobile {
+    padding: 0 20px;
+  }
+}
+
+.page__tab-content {
+  margin-top: 62px;
+  padding: 0 50px;
+
+  @include mobile {
+    padding: 0 20px;
+  }
+}

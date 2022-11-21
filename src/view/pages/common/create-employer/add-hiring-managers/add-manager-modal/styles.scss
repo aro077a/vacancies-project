@@ -1,0 +1,28 @@
+.modal-manager {
+  width: 705px;
+  padding: 40px;
+  max-height: 73vh;
+
+  &__body {
+    &-header {
+      > p {
+        color: var(--secondary-color);
+        line-height: 27px;
+      }
+    }
+    &-form-input {
+      margin-top: 24px;
+    }
+    &-button {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+.modal-manager__body-form-input--flex {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  column-gap: 24px;
+  margin-top: 24px;
+}

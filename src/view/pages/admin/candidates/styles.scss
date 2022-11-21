@@ -1,0 +1,20 @@
+.page__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--secondary-text-color);
+}
+
+.page__result-count {
+  color: var(--primary-color);
+  font-weight: var(--bold-fs);
+  font-size: 16px;
+  line-height: 27px;
+}

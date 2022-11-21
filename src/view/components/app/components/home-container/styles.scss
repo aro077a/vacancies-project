@@ -1,0 +1,102 @@
+@import '~/view/styles/mixins';
+
+.home-primary-wrapper {
+  flex: 1;
+  background: linear-gradient(180deg, var(--bg-color-3) 254px, var(--bg-color-28) 0%);
+
+  @include mobile {
+    background: linear-gradient(180deg, var(--bg-color-3) 160px, var(--bg-color-28) 0%);
+  }
+}
+
+.home-primary-wrapper__content {
+  padding: 27px 50px 18px 50px;
+
+  @include mobile {
+    padding: 31px 20px 20px 20px;
+  }
+}
+
+.home-primary-wrapper__content--without-paddings {
+  padding: 27px 0 18px 0px;
+}
+
+.home-secondary-wrapper {
+  flex: 1;
+  background-color: var(--bg-color-28);
+  display: flex;
+  justify-content: center;
+  padding: 24px 30px 88px 30px;
+
+  @include mobile {
+    padding: 0px;
+  }
+}
+
+.home-secondary-wrapper__content {
+  width: 843px;
+  background-color: var(--secondary-text-color);
+  border-radius: 20px;
+  padding: 25px 40px 40px 40px;
+  box-shadow: 0px 7px 90px rgba(180, 191, 196, 0.12);
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    width: 100%;
+    border-radius: 0px;
+    padding: 30px 20px 24px 20px;
+  }
+}
+
+.home-third-wrapper {
+  flex: 1;
+  background-color: var(--bg-color-28);
+  display: flex;
+  justify-content: center;
+  padding: 34px 30px 62px 30px;
+
+  @media (max-width: 800px) {
+    background-color: var(--secondary-text-color);
+  }
+
+  @include mobile {
+    padding: 20px 20px 39px 20px;
+  }
+}
+
+.home-third-wrapper__content {
+  width: 1140px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+}
+
+.home-fourth-wrapper {
+  flex: 1;
+  background: linear-gradient(180deg, var(--bg-color-3) 320px, var(--bg-color-28) 0%);
+
+  @include mobile {
+    background: linear-gradient(180deg, var(--bg-color-3) 254px, var(--bg-color-28) 0%);
+  }
+}
+
+.home-fifth-wrapper {
+  padding: 27px 50px 18px 50px;
+
+  @include mobile {
+    padding: 31px 20px 20px 20px;
+  }
+}
+.home-sixth-wrapper {
+  padding: 0;
+
+  @include mobile {
+    padding: 0;
+  }
+}
+
+.home-fifth-wrapper__content {
+  width: 100%;
+}

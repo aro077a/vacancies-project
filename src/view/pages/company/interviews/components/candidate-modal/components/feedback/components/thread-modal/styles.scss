@@ -1,0 +1,83 @@
+.thread-modal {
+  width: 55%;
+  min-width: 806px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    min-width: initial;
+  }
+}
+
+.thread-modal__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--primary-color);
+  margin-bottom: 14px;
+}
+
+.thread-modal__body {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 25px;
+}
+
+.thread-modal__footer {
+  display: flex;
+  align-items: center;
+}
+
+.thread-modal__input {
+  background-color: var(--secondary-text-color);
+  border: 1px solid var(--border-light-color);
+  box-shadow: inset 0px 1px 5px rgba(188, 196, 208, 0.2);
+  border-radius: 6px;
+  flex: 1;
+  height: 55px;
+  resize: none;
+  padding: 18px 0px 0px 20px;
+  font-size: var(--input-font-size);
+  line-height: var(--input-line-height);
+  color: var(--bg-primary-color);
+
+  &::placeholder {
+    color: var(--bg-primary-color);
+  }
+}
+
+.thread-modal__input--error {
+  border-color: var(--error-color);
+}
+
+.thread-modal__send-feedback-button {
+  width: 57px;
+  height: 55px;
+  background-color: var(--bg-primary-color);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: var(--bg-primary-light-color);
+  }
+
+  &:active {
+    background-color: var(--bg-primary-dark-color);
+  }
+}
+
+.thread-modal__send-feedback-icon {
+  width: 19px;
+  height: 19px;
+  color: var(--secondary-text-color);
+}
+
+.thread-modal__error-message {
+  font-size: var(--error-message-font-size);
+  line-height: var(--error-message-line-height);
+  color: var(--error-color);
+  margin-top: 2px;
+}

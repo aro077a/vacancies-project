@@ -1,0 +1,33 @@
+.column {
+  min-width: 298px;
+  padding: 24px 4px 24px 20px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(231, 236, 245, 0.5);
+  border-width: 5px 1px 1px;
+  border-style: solid;
+  border-color: #b3b4cc rgba(227, 232, 241, 0.4) rgba(227, 232, 241, 0.4);
+}
+
+.column__list {
+  max-height: 75vh;
+  height: fit-content;
+  overflow: auto;
+}
+
+.column__title {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: var(--bold-fs);
+  color: var(--primary-color);
+}
+
+.column__candidates-count {
+  color: var(--secondary-color);
+}
+
+.column__no-candidates-message {
+  font-size: 12px;
+  color: var(--secondary-color);
+}

@@ -1,0 +1,23 @@
+.modal {
+  margin: 27vh 0px 10vh 0px;
+  max-height: 63vh;
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modal__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+}
+
+.modal__button {
+  width: 100%;
+}

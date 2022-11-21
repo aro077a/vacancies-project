@@ -1,0 +1,30 @@
+.field__label-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.field__label {
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+  color: var(--muted-text-color);
+}
+
+.field__info {
+  margin-left: 9px;
+}
+
+.field__dropdown-item-image {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.field__error-message {
+  font-size: var(--error-message-font-size);
+  line-height: var(--error-message-line-height);
+  color: var(--error-color);
+  margin-top: 2px;
+}

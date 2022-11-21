@@ -1,0 +1,24 @@
+.job-position__block {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--bg-color-8);
+}
+
+.job-position__block-title {
+  margin-bottom: 8px;
+  color: var(--primary-color);
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  font-weight: 600;
+}
+
+.job-position__block-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+
+.job-position__count {
+  color: var(--secondary-color);
+}

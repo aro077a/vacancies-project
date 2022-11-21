@@ -1,0 +1,133 @@
+.dropdown {
+  position: absolute;
+  top: 9px;
+  right: 6px;
+}
+
+.dropdown__dots {
+  padding: 3px 6px;
+  color: var(--secondary-color);
+}
+
+.dropdown__content {
+  position: absolute;
+  z-index: 1;
+  right: 100%;
+  width: 160px;
+  padding: 10px 0;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 3px 17px rgba(150, 170, 180, 0.3);
+}
+
+.dropdown__header {
+  margin: 0 10px 10px 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-light-color);
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.dropdown__status-change {
+  width: 100%;
+}
+
+.dropdown__status-change--active {
+  background-color: #f5f6f8;
+}
+
+.dropdown__status-change-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  color: var(--color-2);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.dropdown__status-arrow {
+  transform: rotate(90deg);
+  color: var(--secondary-color);
+}
+
+.dropdown__close-deal {
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  color: #f95565;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:active {
+    background-color: #f5f6f8;
+  }
+}
+
+.dropdown__open-btn {
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  color: var(--color-2);
+  font-size: 16px;
+  line-height: 20px;
+
+  &:active {
+    background-color: #f5f6f8;
+  }
+}
+
+.dropdown__inner-dropdown {
+  position: absolute;
+  z-index: 2;
+  top: 125px;
+  right: 0;
+  width: 243px;
+  padding: 17px 10px;
+  border-radius: 6px;
+  background-color: #fff;
+  list-style: none;
+  text-align: left;
+  box-shadow: 0px 3px 17px rgba(150, 170, 180, 0.3);
+}
+
+.dropdown__inner-dropdown-item {
+  padding: 4px 0;
+  font-size: 14px;
+  font-weight: var(--bold-fs);
+  line-height: 18px;
+}
+
+.dropdown__inner-dropdown-item:nth-child(1) {
+  color: #2697ff;
+}
+
+.dropdown__inner-dropdown-item:nth-child(2) {
+  color: #f3a200;
+}
+
+.dropdown__inner-dropdown-item:nth-child(3) {
+  color: #7f60ff;
+}
+
+.dropdown__inner-dropdown-item:nth-child(4) {
+  color: #1caabc;
+}
+
+.dropdown__inner-dropdown-item:nth-child(5) {
+  color: #58c813;
+}
+
+.dropdown__inner-dropdown-item:nth-child(6) {
+  color: #3cb593;
+}
+
+.dropdown__inner-dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}

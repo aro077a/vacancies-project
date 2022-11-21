@@ -1,0 +1,4 @@
+.ReactCrop__drag-handle::after {
+  width: 15px;
+  height: 15px;
+}

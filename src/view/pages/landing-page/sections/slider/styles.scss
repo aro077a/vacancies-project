@@ -1,0 +1,36 @@
+@import '~/view/styles/mixins';
+
+.section {
+  padding: 150px 100px;
+  background-color: #f6f6fc;
+
+  @include tablet {
+    padding: 70px 0;
+  }
+}
+
+.section__title {
+  margin-bottom: 40px;
+  color: #06091e;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 50px;
+  }
+}
+
+.section__list {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.section__list-item {
+  width: 254px;
+  height: 88px;
+  object-fit: contain;
+  margin-right: 84px;
+}

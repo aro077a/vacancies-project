@@ -1,0 +1,23 @@
+.page__title-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--secondary-text-color);
+  margin-bottom: 6px;
+}
+
+.page__add-job-button {
+  width: 170px;
+}
+
+.page__content-wrapper {
+  display: flex;
+  align-items: flex-start;
+}

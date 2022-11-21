@@ -1,0 +1,137 @@
+.card {
+  padding: 10px 14px 9px 14px;
+  background-color: var(--secondary-text-color);
+  border: 1px solid rgba(227, 232, 241, 0.4);
+  box-shadow: 0px 2px 6px rgba(231, 236, 245, 0.5);
+  border-radius: 6px;
+}
+
+.card__body {
+  display: flex;
+}
+.card__job {
+  min-height: 95px;
+  &--name {
+    padding: 4px 0;
+    font-weight: var(--bold-fs);
+    font-size: var(--caption-font-size);
+    line-height: var(--caption-line-height);
+    color: var(--primary-color);
+  }
+}
+
+.card__image {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin-right: 7px;
+}
+
+.card__info-wrapper {
+  flex: 1;
+}
+
+.card__name-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__name {
+  max-width: 143px;
+  font-weight: 500;
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+  color: var(--primary-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card__info {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary-color);
+}
+
+.card__date {
+  max-width: 75px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary-color);
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card__match-percent {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary-color);
+  padding-top: 5px;
+}
+
+.card__separator {
+  height: 1px;
+  background-color: var(--bg-color-17);
+  margin: 25px -14px 8px -14px;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__show-pipeline-button {
+  flex: 1;
+  height: 22px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--bg-primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: var(--bg-secondary-color);
+  }
+}
+
+.card__show-pipeline-chevron-icon {
+  width: 7px;
+  height: 7px;
+  margin-left: 5px;
+}
+
+.card__footer-separator {
+  width: 1px;
+  height: 22px;
+  background-color: var(--border-light-color);
+  margin: 0px 5px;
+}
+
+.card__unmatch-button {
+  flex: 1;
+  height: 22px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--bg-danger-color);
+
+  &:hover {
+    background-color: var(--bg-secondary-color);
+  }
+}
+
+.card__more-info-button {
+  width: 99px;
+  color: var(--primary-color);
+}
+
+.card__match-button {
+  width: 99px;
+}

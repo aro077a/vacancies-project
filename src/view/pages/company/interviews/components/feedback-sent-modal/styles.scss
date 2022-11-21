@@ -1,0 +1,35 @@
+@import '~/view/styles/mixins';
+
+.modal {
+  margin: 27vh 0px 10vh 0px;
+  max-height: 63vh;
+  padding-top: 77px;
+  padding-bottom: 40px;
+
+  @include mobile {
+    margin: 15vh 0px 10vh 0px;
+    max-height: 75vh;
+  }
+}
+
+.modal__image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.modal__title {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal__subtitle {
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  color: var(--secondary-color);
+  text-align: center;
+}

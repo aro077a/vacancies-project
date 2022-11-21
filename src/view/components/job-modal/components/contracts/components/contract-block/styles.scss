@@ -1,0 +1,73 @@
+.block {
+  border: 1px solid #f7f8fc;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  border-radius: 6px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.block__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 25px;
+}
+
+.block__contract-info {
+  width: 60%;
+}
+
+.block__update-btn {
+  width: 180px;
+}
+
+.block__extra-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block__file-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--primary-color);
+}
+
+.block__download-btn {
+  display: flex;
+  align-items: center;
+  color: var(--accent-color);
+  font-weight: var(--bold-fs);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.block__download-icon {
+  margin-left: 4px;
+}
+
+.block__file-size {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary-color);
+}
+
+.block__body {
+  border-top: 1px solid var(--bg-color-8);
+  padding: 25px 25px 18px 25px;
+}
+
+.separator {
+  margin: 0 6px;
+  font-size: 10px;
+}
+
+.block__dropdown-icon {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+}

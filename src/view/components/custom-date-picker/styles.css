@@ -1,0 +1,27 @@
+.DayPicker-Month {
+  display: block;
+}
+form {
+  display: flex;
+  padding-bottom: 15px;
+  height: 120px;
+}
+select {
+  font-size: var(--h5-font-size);
+  line-height: var(--h5-line-height);
+  color: var(--primary-color);
+  padding: 3px;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+}
+option:checked {
+  background-color: var(--bg-primary-color);
+  border-radius: 6px;
+  text-align: center;
+  padding: 2px 4px;
+  color: var(--secondary-text-color);
+}
+.DayPickerInput-Overlay {
+  left: -20px;
+}

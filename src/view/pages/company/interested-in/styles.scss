@@ -1,0 +1,39 @@
+@import '~/view/styles/mixins';
+
+.page__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+
+  @include mobile {
+    margin-bottom: 18px;
+  }
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: #000;
+
+  @include mobile {
+    font-size: 27px;
+    line-height: 37px;
+  }
+}
+
+.page__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 18px;
+  row-gap: 20px;
+}
+
+.page__list--duo {
+  grid-template-columns: 1fr 1fr;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}

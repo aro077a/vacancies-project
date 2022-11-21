@@ -1,0 +1,134 @@
+@import '~/view/styles/mixins';
+.overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview__block-title,
+.overview__block-title-details {
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  color: var(--color-2);
+}
+
+.overview__block-title-details {
+  margin-bottom: 8px;
+}
+
+.overview__experience-list,
+.overview__project-list,
+.overview__license-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.overview__projects,
+.overview__work-experience,
+.overview__details-block {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--bg-color-8);
+}
+
+.overview__details-block {
+  @include mobile {
+    border-bottom: none;
+  }
+}
+
+.overview__license-list {
+  padding: 20px 0;
+}
+
+.card__user-tags {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  & div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
+  }
+}
+
+.card__user-tags--extra {
+  overflow: visible !important;
+}
+
+.personal-detail__label {
+  display: flex;
+  width: calc(30%);
+  overflow: hidden;
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.personal-detail__label-caption {
+  color: var(--secondary-color);
+}
+
+.personal-detail__label-value {
+  color: var(--color-2);
+  word-break: break-word;
+  margin-left: 10px;
+  margin-bottom: 14px;
+}
+
+.personal-detail__label-value-year {
+  margin-left: 44px;
+}
+
+.modal__footer-disclose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+
+  .checkbox-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include mobile {
+    margin: 0 0 35px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.modal__footer-disclose-label {
+  margin-left: 10px;
+  color: var(--secondary-color);
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.overview__additional-info {
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--secondary-color);
+  margin-bottom: 12px;
+}
+
+.overview__availability {
+  display: inline;
+  padding: 8px 15px;
+  background-color: var(--color-8);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: var(--bold-fs);
+  color: var(--secondary-color);
+
+  & span {
+    color: var(--primary-color);
+  }
+}

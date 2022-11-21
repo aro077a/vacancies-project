@@ -1,0 +1,30 @@
+.block {
+  display: flex;
+}
+
+.block__option {
+  width: 80px;
+  height: 30px;
+  background-color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--primary-text-color);
+  border: 1px solid var(--border-light-color);
+
+  &:first-of-type {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+
+  &:last-of-type {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+.block__option--selected {
+  background-color: var(--bg-primary-color);
+  color: var(--secondary-text-color);
+  border: none;
+}

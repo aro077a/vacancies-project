@@ -1,0 +1,90 @@
+.page__timesheet-content-item {
+  display: grid;
+  grid-template-columns: 18% 13% 12% 11% 10% 16% 10% auto;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--color-13);
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.01);
+  border-radius: 8px;
+  padding: 16px 0px 16px 38px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  @media (max-width: 800px) {
+    grid-template-columns: 45% 20% auto;
+    padding: 16px 0px 16px 15px;
+  }
+  @media (max-width: 800px) {
+    &-position,
+    &-contract,
+    &-rate,
+    &-inTotal,
+    &-hours {
+      display: none;
+    }
+  }
+  &-img {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    img {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+    p {
+      color: var(--primary-color);
+    }
+  }
+  &-img,
+  &-time {
+    @media (max-width: 800px) {
+      font-size: var(--caption-font-size);
+    }
+  }
+  &-position,
+  &-contract,
+  &-time {
+    color: var(--primary-color);
+    text-decoration: underline;
+    max-width: 150px;
+  }
+  &-contract {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 120px;
+  }
+  &-inTotal {
+    color: var(--primary-color);
+  }
+  &-rate {
+    color: var(--primary-color);
+    span {
+      color: var(--secondary-color);
+    }
+  }
+
+  &-status {
+    border-radius: 6px;
+    text-align: center;
+    min-width: 99px;
+    padding: 7px 0;
+    font-weight: var(--bold-fs);
+    line-height: var(--paragraph-line-height);
+    &--approved {
+      background: var(--bg-color-15);
+      color: var(--color-3);
+    }
+    &--rejected {
+      background: var(--bg-color-30);
+      color: var(--color-18);
+    }
+    &--submitted {
+      background: var(--bg-color-31);
+      color: var(--color-19);
+    }
+  }
+}

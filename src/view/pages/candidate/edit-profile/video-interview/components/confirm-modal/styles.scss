@@ -1,0 +1,13 @@
+.modal {
+  min-width: 408px;
+}
+
+.modal__buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal__button {
+  width: 168px;
+}

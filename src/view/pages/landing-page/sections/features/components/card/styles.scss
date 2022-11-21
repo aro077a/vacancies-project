@@ -1,0 +1,99 @@
+@import '~/view/styles/mixins';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  width: calc(25% - 15px);
+  min-height: 232px;
+  padding: 30px 25px;
+  background-color: #fff;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  border-radius: 12px;
+
+  &:nth-child(1) &__label {
+    background-color: #f4e2ff;
+  }
+
+  &:nth-child(2) &__label {
+    background-color: #eef2f7;
+  }
+
+  &:nth-child(3) &__label {
+    background-color: #e8f4ff;
+  }
+
+  &:nth-child(4) &__label {
+    background-color: #dcfbf2;
+  }
+
+  &:nth-child(5) &__label {
+    background-color: #fff3e2;
+  }
+
+  &:nth-child(6) &__label {
+    background-color: #fff4ef;
+  }
+
+  &:nth-child(7) &__label {
+    background-color: #efefff;
+  }
+
+  &:nth-child(8) &__label {
+    background-color: #eef2f7;
+
+    & svg {
+      z-index: 1;
+    }
+  }
+
+  &:nth-child(8) &__label::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4779b3;
+  }
+
+  @include tablet {
+    width: calc(50% - 10px);
+    min-height: 140px;
+    padding: 16px 13px;
+  }
+}
+
+.card__label {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+
+  @include tablet {
+    width: 34px;
+    height: 34px;
+  }
+
+  & svg {
+    @include tablet {
+      width: 13px;
+      height: 13px;
+    }
+  }
+}
+
+.card__text {
+  color: #110f48;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

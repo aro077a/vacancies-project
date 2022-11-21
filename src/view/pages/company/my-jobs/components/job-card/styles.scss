@@ -1,0 +1,86 @@
+.card {
+  position: relative;
+  display: flex;
+  width: 322px;
+  height: 322px;
+  flex-direction: column;
+  padding: 40px 25px 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card__position-name {
+  margin-bottom: 6px;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.card__matched {
+  display: flex;
+  align-items: center;
+}
+
+.card__matched-info {
+  margin-left: 6px;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: var(--bold-fs);
+  line-height: 27px;
+}
+
+.card__user-icon {
+  width: 13px;
+  height: 15px;
+  color: var(--secondary-color);
+}
+
+.card__description {
+  margin: 10px 0;
+  overflow: auto;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  column-gap: 10px;
+}
+
+.card__tag,
+.card__salary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__tag {
+  width: auto;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.card__salary {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 36px;
+  color: var(--primary-color);
+  text-align: right;
+}
+
+.card__salary-type {
+  opacity: 0.5;
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.card__dropdown {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}

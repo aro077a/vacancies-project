@@ -1,0 +1,28 @@
+.contracts__section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--bg-color-8);
+  }
+}
+
+.contracts__section-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-2);
+}
+
+.contracts__section-content {
+  background: #ffffff;
+  border: 1px solid #f7f8fc;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  border-radius: 6px;
+}
+
+.no-contracts-message {
+  color: var(--secondary-color);
+}

@@ -1,0 +1,66 @@
+.card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 1fr calc(11% + 20px);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 77px;
+  padding: 12px 0 12px 20px;
+  column-gap: 10px;
+  border-bottom: 1px solid var(--border-light-color);
+}
+
+.card__overlay {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.card__candidate-info {
+  display: flex;
+  align-items: center;
+  font-weight: var(--bold-fs);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card__candidate-name {
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+}
+
+.card__candidate-location {
+  margin-right: auto;
+  font-weight: var(--bold-fs);
+}
+
+.card__candidate-status {
+  z-index: 2;
+  display: flex;
+}
+
+.card__candidate-photo {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+  border-radius: 5.3px;
+}
+
+.card__actn-btn {
+  height: 55px;
+  font-size: 16px;
+}
+
+.card__actn-btn:first-child {
+  margin-right: 7px;
+}
+
+.card__dropdown {
+  top: 0;
+  right: 90%;
+}

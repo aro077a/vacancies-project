@@ -1,0 +1,27 @@
+@import '~/view/styles/mixins';
+
+.page__title-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--secondary-text-color);
+}
+
+.page__add-btn {
+  width: 145px;
+}
+
+.page__tabs {
+  margin-bottom: 33px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}

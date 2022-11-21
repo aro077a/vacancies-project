@@ -1,0 +1,189 @@
+@import '~/view/styles/mixins';
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+  @include mobile {
+    align-items: flex-start;
+  }
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--primary-color);
+}
+
+.page__order-number {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 47px;
+  color: var(--primary-color);
+
+  > span {
+    color: var(--secondary-color);
+  }
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+.page__subtitle {
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  color: var(--secondary-color);
+  margin-bottom: 24px;
+}
+
+.page__user-types-wrapper {
+  flex: 1;
+  margin-bottom: 50px;
+}
+
+.page__user-type-card {
+  padding: 14px 30px 14px 14px;
+  background-color: var(--secondary-text-color);
+  border: 1px solid var(--bg-color-17);
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  @include mobile {
+    padding: 13px 15px 12px 13px;
+    margin-bottom: 16px;
+  }
+}
+
+.page__user-type-icon-wrapper {
+  width: 63px;
+  height: 63px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 23px;
+
+  @include mobile {
+    width: 52px;
+    height: 52px;
+    margin-right: 15px;
+  }
+}
+
+.page__user-type-icon-wrapper--hiring-company {
+  background-color: var(--bg-color-18);
+}
+
+.page__user-type-icon-wrapper--candidate {
+  background-color: var(--bg-color-19);
+}
+
+.page__user-type-icon--hiring-company {
+  width: 19px;
+  height: 27px;
+  color: var(--bg-primary-color);
+
+  @include mobile {
+    width: 15px;
+    height: 22px;
+  }
+}
+
+.page__user-type-icon--candidate {
+  width: 23px;
+  height: 27px;
+  color: var(--accent-color);
+
+  @include mobile {
+    width: 19px;
+    height: 22px;
+  }
+}
+
+.page__user-type-card-title-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page__user-type-card-title {
+  font-weight: 600;
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  color: var(--primary-color);
+}
+
+.page__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.page__terms-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 800px) {
+    margin-bottom: 31px;
+  }
+}
+
+.page__terms-checkbox-label {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  margin-left: 11px;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.page__terms-checkbox-link {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--bg-primary-color);
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.page__terms-checkbox-label--error {
+  color: var(--error-color);
+}
+
+.page__terms-checkbox-link--error {
+  color: var(--error-color);
+}
+
+.page__next-button {
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+}

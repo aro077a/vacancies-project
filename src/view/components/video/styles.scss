@@ -1,0 +1,23 @@
+.video-player {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.video-player__control {
+  width: 100%;
+  height: 100%;
+}
+
+.video-player__delete-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  color: var(--primary-color);
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 6px;
+}

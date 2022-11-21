@@ -1,0 +1,21 @@
+.modal-cancel {
+  &__body {
+    &-title {
+      display: flex;
+      justify-content: center;
+      h2 {
+        font-weight: bold;
+        font-size: var(--h2-font-size);
+        line-height: var(--h2-line-height);
+        text-align: center;
+        color: var(--primary-color);
+        width: 90%;
+      }
+    }
+    &-buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 15px;
+    }
+  }
+}

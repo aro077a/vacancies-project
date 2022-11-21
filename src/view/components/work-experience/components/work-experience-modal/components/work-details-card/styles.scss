@@ -1,0 +1,16 @@
+.work-details {
+  display: flex;
+  align-items: center;
+  &__item-remove {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    svg {
+      margin-left: 11px;
+    }
+  }
+  &__field {
+    width: 100%;
+    padding: 20px 0;
+  }
+}

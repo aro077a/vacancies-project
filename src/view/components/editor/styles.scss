@@ -1,0 +1,107 @@
+.editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor__label {
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+  color: var(--muted-text-color);
+  margin-bottom: 10px;
+}
+
+.editor__body {
+  position: relative;
+  flex: 1;
+  background-color: var(--secondary-text-color);
+  border: 1px solid var(--border-light-color);
+  box-shadow: inset 0px 1px 5px rgba(188, 196, 208, 0.2);
+  border-radius: 6px;
+  padding: 20px;
+  padding-bottom: 60px;
+  cursor: text;
+}
+
+.editor__toolbar {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: var(--bg-secondary-color);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: default;
+}
+
+.editor__h1-block {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--primary-color);
+}
+
+.editor__h2-block {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--primary-color);
+}
+
+.editor__h3-block {
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  color: var(--primary-color);
+}
+
+.editor__default-block {
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  color: var(--secondary-color);
+}
+
+.editor__toolbar-button-wrapper {
+  margin-right: 15px;
+}
+
+.editor__toolbar-button {
+  display: flex;
+  color: var(--secondary-color);
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 3px 5px;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background-color: var(--bg-color-4);
+    color: var(--secondary-text-color);
+
+    > svg {
+      fill: var(--secondary-text-color);
+    }
+  }
+
+  > svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--secondary-color);
+  }
+}
+
+.editor__toolbar-button--active {
+  background-color: var(--bg-color-4);
+  color: var(--secondary-text-color);
+
+  > svg {
+    fill: var(--secondary-text-color);
+  }
+}
+
+.editor__remaining-chars-message {
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+  color: var(--color-17);
+  margin-top: 9px;
+}

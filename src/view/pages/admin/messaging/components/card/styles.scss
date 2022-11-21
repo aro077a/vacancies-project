@@ -1,0 +1,86 @@
+.card {
+  position: relative;
+  padding: 25px 20px 25px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &:hover .card__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &:hover .card__date {
+    display: none;
+  }
+}
+
+.card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__emails {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.card__email {
+  color: var(--primary-color);
+}
+
+.card__date {
+  color: var(--secondary-color);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.card__text {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.card__btns {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  padding: 0 10px;
+  display: none;
+  color: var(--primary-color);
+  background-color: #fff;
+}
+
+.card__btn {
+  display: flex;
+  align-items: center;
+}
+
+.card__forward-icon {
+  margin-left: 20px;
+  transform: scale(-1, 1);
+}
+
+.card__urn-icon {
+  width: 32px;
+  height: 23px;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+
+.card__reply-icon,
+.card__forward-icon {
+  width: 33px;
+  height: 31px;
+  padding: 5px 10px;
+}

@@ -1,0 +1,38 @@
+@import '~/view/styles/mixins';
+
+.page {
+  &__title {
+    font-weight: bold;
+    font-size: var(--h1-font-size);
+    line-height: var(--h1-line-height);
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    font-size: var(--paragraph-font-size);
+    line-height: var(--paragraph-line-height);
+    color: var(--secondary-color);
+    margin-bottom: 24px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__input-field {
+    margin-top: 24px;
+  }
+
+  &__button-wrapper {
+    margin-left: auto;
+    margin-top: auto;
+    &__reset {
+      width: 305px;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

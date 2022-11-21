@@ -1,0 +1,26 @@
+.modal {
+  width: 625px;
+}
+
+.modal__description {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--secondary-color);
+}
+
+.modal__field {
+  margin-bottom: 24px;
+}
+
+.modal__caption {
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 27px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.modal__submit-btn {
+  width: 100%;
+}

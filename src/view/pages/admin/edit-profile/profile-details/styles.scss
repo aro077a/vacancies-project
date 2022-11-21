@@ -1,0 +1,40 @@
+@import '~/view/styles/mixins';
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 67vh;
+}
+
+.page__header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+  @include mobile {
+    align-items: flex-start;
+  }
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h2-font-size);
+  color: var(--primary-color);
+}
+
+.page__form-rows-input {
+  margin-top: 24px;
+}
+
+.page__form-footer {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.page__form-footer-button {
+  @include mobile {
+    width: 164px;
+  }
+}

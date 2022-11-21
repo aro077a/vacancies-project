@@ -1,0 +1,39 @@
+@import '~/view/styles/mixins';
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.auth-wrapper {
+  flex: 1;
+  background-color: var(--bg-color-2);
+  display: flex;
+  justify-content: center;
+  padding: 25px 30px 30px 30px;
+
+  @include mobile {
+    padding: 0px;
+  }
+}
+
+.auth-wrapper__content {
+  width: 843px;
+  background-color: var(--secondary-text-color);
+  border-radius: 20px;
+  padding: 30px 40px 40px 40px;
+  box-shadow: 0px 7px 90px rgba(180, 191, 196, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 900px) {
+    max-width: 843px;
+  }
+
+  @include mobile {
+    width: 100%;
+    border-radius: 0px;
+    padding: 30px 20px 30px 20px;
+  }
+}

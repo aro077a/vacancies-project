@@ -1,0 +1,16 @@
+.tag {
+  padding: 8px 14px;
+  border-radius: 2px;
+  font-weight: var(--bold-fs);
+  font-size: 12px;
+}
+
+.tag--primary {
+  color: var(--border-color-2);
+  background-color: #f5f6fb;
+}
+
+.tag--secondary {
+  color: var(--bg-color-6);
+  background-color: #f5f6fb;
+}

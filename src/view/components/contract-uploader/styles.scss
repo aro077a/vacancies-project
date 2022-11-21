@@ -1,0 +1,122 @@
+@import '~/view/styles/mixins';
+
+.field__upload-box {
+  height: 55px;
+  padding: 0px 10px;
+  background-color: rgba(243, 243, 249, 0.5);
+  border: 2px dashed rgba(62, 60, 153, 0.15);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @include mobile {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+.field__title {
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+  color: var(--muted-text-color);
+  margin-bottom: 10px;
+}
+
+.field__upload-box--active {
+  background-color: rgba(243, 243, 249, 1);
+}
+
+.field__linkedin-logo {
+  width: 14px;
+  height: 15px;
+  object-fit: contain;
+  margin-right: 11px;
+}
+
+.field__upload-text {
+  font-weight: 500;
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+  color: var(--bg-primary-color);
+}
+
+.field__upload-tutorial {
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+  color: var(--color-15);
+
+  > span {
+    color: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+.field__uploaded-file-card {
+  height: 55px;
+  padding: 0px 10px;
+  background-color: var(--secondary-text-color);
+  border: 1px solid var(--bg-color-17);
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.field__uploaded-file-wrapper {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.field__uploaded-file-type-wrapper {
+  height: 38px;
+  padding: 0px 6px;
+  background-color: var(--bg-color-20);
+  border-radius: 6px;
+  margin-right: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.field__uploaded-file-type {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 18px;
+  color: var(--secondary-text-color);
+}
+
+.field__uploaded-file-info-wrapper {
+  overflow: hidden;
+}
+
+.field__uploaded-file-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.field__uploaded-file-size {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--muted-text-color);
+}
+
+.field__trash-button {
+  display: flex;
+  margin-left: 10px;
+}
+
+.field__trash-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary-color);
+}

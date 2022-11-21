@@ -1,0 +1,112 @@
+.page__timesheet-content-item {
+  display: grid;
+  grid-template-columns: 10% 9% 10% 9% 9% 9% 9% 11% 9% 5% auto;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--color-13);
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.01);
+  border-radius: 8px;
+  padding: 16px 0px 16px 38px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  &-img {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    img {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+    }
+    p {
+      color: var(--primary-color);
+    }
+  }
+  &-position,
+  &-candidate,
+  &-time {
+    color: var(--primary-color);
+    text-decoration: underline;
+    max-width: 150px;
+    line-height: var(--caption-line-height);
+  }
+  &-candidate {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 120px;
+  }
+
+  &-candidate-in-total,
+  &-company-in-total,
+  &-week {
+    color: var(--primary-color);
+    line-height: var(--caption-line-height);
+  }
+  &-rate {
+    color: var(--primary-color);
+    span {
+      color: var(--secondary-color);
+    }
+  }
+
+  &-status {
+    border-radius: 6px;
+    text-align: center;
+    min-width: 99px;
+    padding: 7px 0;
+    font-weight: var(--bold-fs);
+    line-height: var(--paragraph-line-height);
+    &--approved {
+      background: var(--bg-color-15);
+      color: var(--color-3);
+    }
+    &--rejected {
+      background: var(--bg-color-30);
+      color: var(--color-18);
+    }
+    &--submitted {
+      background: var(--bg-color-31);
+      color: var(--color-19);
+    }
+  }
+  &-dots {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+    > div {
+      > div {
+        padding: 5px 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        top: -40%;
+        right: 100%;
+        width: unset;
+        button {
+          font-weight: var(--bold-fs);
+          line-height: var(--h5-line-height);
+          font-size: var(--h5-font-size);
+          min-height: 55px;
+          padding: 0 30px;
+          border-radius: 6px;
+          justify-content: center;
+        }
+        > div {
+          margin: 3px 8px;
+          > div {
+            display: none;
+          }
+        }
+        button:first-child {
+          background-color: var(--accent-color);
+          color: var(--secondary-text-color);
+        }
+        button:last-child {
+          background-color: var(--bg-secondary-light-color);
+          color: var(--primary-text-color);
+        }
+      }
+    }
+  }
+}

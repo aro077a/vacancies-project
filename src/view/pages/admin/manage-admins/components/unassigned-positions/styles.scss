@@ -1,0 +1,106 @@
+.unassigned-positions {
+  margin-top: 8px;
+  &__title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: var(--h1-font-size);
+    line-height: var(--h1-line-height);
+    color: var(--secondary-text-color);
+  }
+  &__table {
+    width: 100%;
+    min-height: 12vh;
+    background-color: var(--secondary-text-color);
+    padding: 30px;
+    box-shadow: 0px 7px 90px rgba(180, 191, 196, 0.12);
+    border-radius: 12px;
+    &-header {
+      display: grid;
+      grid-template-columns: 22% 19% 48% auto;
+      justify-content: flex-start;
+      padding: 15px 0px 16px 20px;
+      align-items: center;
+      background-color: var(--color-13);
+      color: var(--secondary-color);
+      font-size: 14px;
+      border-radius: 6px;
+      &-company,
+      &-region,
+      &-position,
+      &-status {
+        display: flex;
+        align-items: center;
+        &-arrow {
+          margin-left: 5px;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      &-items {
+        width: 100%;
+      }
+      &-item {
+        display: grid;
+        grid-template-columns: 22% 19% 48% auto;
+        align-items: center;
+        justify-content: flex-start;
+        background: var(--secondary-text-color);
+        border-radius: 8px;
+        padding: 16px 0px 16px 20px;
+        border-bottom: 1px solid var(--border-light-color);
+        cursor: pointer;
+        &-company,
+        &-position,
+        &-region {
+          font-size: var(--paragraph-font-size);
+          line-height: var(--paragraph-line-height);
+          color: var(--primary-color);
+          font-weight: var(--bold-fs);
+        }
+        &-company,
+        &-position {
+          text-decoration: underline;
+        }
+        &-img {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          img {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ebebeb;
+            border-radius: 10px;
+          }
+          p {
+            font-size: var(--paragraph-font-size);
+            line-height: var(--paragraph-line-height);
+            color: var(--primary-color);
+            font-weight: var(--bold-fs);
+            text-decoration: underline;
+          }
+        }
+        &-dots {
+          display: flex;
+          justify-content: space-between;
+          gap: 23px;
+          button {
+            max-width: 100px;
+            max-height: 41px;
+            color: var(--secondary-color);
+          }
+        }
+      }
+    }
+  }
+}

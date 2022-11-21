@@ -1,0 +1,107 @@
+nav {
+  display: block;
+  text-align: center;
+  margin-top: 7px;
+  cursor: pointer;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.dropdown__nav-title {
+  display: block;
+  position: relative;
+  font-weight: 600;
+  font-size: var(--caption-font-size);
+  line-height: 23px;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  margin-right: 35px;
+  height: 30px;
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.dropdown__nav-link {
+  height: 31px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: var(--bg-secondary-color);
+    border-top: 1px solid var(--border-color-7);
+    border-bottom: 1px solid var(--border-color-7);
+    border-radius: 12px;
+  }
+}
+.dropdown__nav-link-name {
+  font-weight: var(--bold-fs);
+  font-size: 12px;
+  line-height: 20px;
+  text-align: start;
+  padding-left: 15px;
+  color: var(--primary-color);
+}
+.dropdown__nav li {
+  position: relative;
+}
+.dropdown__nav-list {
+  width: 184px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 16px;
+  left: 170px;
+  text-align: start;
+  border-radius: 12px;
+  background-color: var(--secondary-text-color);
+}
+
+.dropdown__nav > li:hover {
+  color: var(--accent-color);
+}
+
+.dropdown__nav li .dropdown__nav-link-name:nth-last-child(2):before {
+  content: '>';
+  position: absolute;
+  color: var(--primary-color);
+  top: 0;
+  right: 5px;
+  padding-top: 4px;
+  padding-right: 5px;
+  font-size: 13px;
+}
+
+.dropdown__nav ul {
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  left: -99999em;
+}
+.dropdown__nav > li:hover > ul {
+  left: auto;
+  min-width: 100%;
+  width: 184px;
+  background: var(--secondary-text-color);
+  top: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dropdown__nav > li li:hover > ul,
+.dropdown__link-child--candidate:first-child {
+  left: 100.5%;
+  top: -6px;
+  display: block;
+  width: 184px;
+
+  padding: 5px 15px;
+  > span {
+    display: none;
+  }
+}
+.dropdown__link-child--candidate {
+  height: 102px;
+}

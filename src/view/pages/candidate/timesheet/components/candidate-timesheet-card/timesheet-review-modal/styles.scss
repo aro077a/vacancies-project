@@ -1,0 +1,70 @@
+.timesheet-modal {
+  width: 991px;
+  min-height: 51vh;
+  &__title {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    @media (max-width: 800px) {
+      gap: 8px;
+    }
+    h1 {
+      font-weight: var(--bold-fs);
+      font-size: var(--h2-font-size);
+      line-height: var(--h2-line-height);
+      color: var(--primary-color);
+      @media (max-width: 800px) {
+        font-size: var(--h2-font-size);
+      }
+    }
+    &-week {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      display: flex;
+      &-icon {
+        width: 15px;
+        height: 15px;
+        color: var(--bg-color-6);
+      }
+      p {
+        font-size: var(--h4-font-size);
+        line-height: var(--label-line-height);
+        color: var(--primary-color);
+        margin-top: 3px;
+        width: 190px;
+      }
+    }
+  }
+  &__body {
+    &-footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 15px;
+      margin-top: 40px;
+      @media (max-width: 800px) {
+        align-items: unset;
+        flex-direction: column;
+      }
+      &--total {
+        p {
+          font-size: 20px;
+          line-height: var(--input-line-height);
+          color: var(--secondary-color);
+          span {
+            font-weight: var(--bold-fs);
+            font-size: 20px;
+            line-height: var(--input-line-height);
+            color: var(--primary-color);
+          }
+        }
+      }
+      &--buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+    }
+  }
+}

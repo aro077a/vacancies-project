@@ -1,0 +1,117 @@
+.timesheet-card {
+  border-bottom: 2px solid var(--border-light-color);
+  padding-bottom: 30px;
+  min-height: 38vh;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    &:nth-of-type(1) {
+      margin-top: 30px;
+    }
+    &-name,
+    &-desc,
+    &-price {
+      color: var(--muted-text-color);
+      span {
+        color: var(--color-2);
+        line-height: var(--input-line-height);
+      }
+    }
+    &-name {
+      span {
+        margin-left: 37px;
+      }
+    }
+    &-desc {
+      display: grid;
+      grid-template-columns: 122px auto;
+      span {
+        margin-left: 13px;
+      }
+    }
+  }
+  &__expenses {
+    margin-top: 30px;
+    &-name,
+    &-price {
+      color: var(--muted-text-color);
+      span {
+        color: var(--color-2);
+        line-height: var(--input-line-height);
+      }
+    }
+    &-name {
+      span {
+        margin-left: 30px;
+      }
+    }
+    &-price {
+      margin-top: 20px;
+      span {
+        margin-left: 95px;
+      }
+    }
+    &-attachments {
+      margin-top: 20px;
+      color: var(--muted-text-color);
+      display: grid;
+      grid-template-columns: 131px auto;
+      align-items: baseline;
+      &-file {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 15px;
+        @media (max-width: 500px) {
+          width: 100%;
+          grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        }
+      }
+    }
+  }
+  &__hours,
+  &__days {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+    margin: 24px 0;
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(auto-fill, minmax(60%, 1fr));
+    }
+    &-items {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 800px) {
+        flex-direction: unset;
+      }
+      &-day,
+      &-hour {
+        border: 1px solid var(--border-color-8);
+        padding: 12px 20px;
+        min-height: 45px;
+        @media (max-width: 800px) {
+          width: 50%;
+        }
+      }
+      &-day {
+        border-bottom: 0;
+        color: var(--muted-text-color);
+        line-height: var(--input-line-height);
+      }
+      &-hour {
+        color: var(--primary-color);
+        line-height: var(--caption-line-height);
+        font-size: var(--h4-font-size);
+      }
+    }
+  }
+  &__days {
+    &-items {
+      &-hour {
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}

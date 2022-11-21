@@ -1,0 +1,111 @@
+@import '~/view/styles/mixins';
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 18px 25px 25px 25px;
+  border: 1px solid #f7f8fc;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  border-radius: 6px;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.card__file-name {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__bottom {
+  display: flex;
+}
+
+.card__file-size {
+  color: var(--secondary-color);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__download-btn {
+  display: flex;
+  align-items: center;
+  color: var(--accent-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.card__download-icon {
+  width: 11px;
+  height: 11px;
+  margin-left: 5px;
+}
+
+.card__status--approved,
+.card__status--rejected,
+.card__status--waiting {
+  min-width: 147px;
+  height: 41px;
+  padding: 7px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: var(--bold-fs);
+  line-height: 27px;
+  text-align: center;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.card__status--approved {
+  color: var(--color-3);
+  background-color: var(--bg-color-15);
+}
+
+.card__status--rejected {
+  color: var(--error-color);
+  background-color: var(--bg-color-16);
+}
+
+.card__status--waiting {
+  color: var(--color-3);
+  background-color: var(--bg-color-15);
+}
+
+.card__file-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+
+  @include mobile {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.divider {
+  margin: 0 6px;
+  color: var(--border-light-color);
+}
+
+.card__actn-btns {
+  display: flex;
+}
+
+.card__act-btn {
+  width: 127px;
+
+  &:first-child {
+    margin-right: 9px;
+  }
+}

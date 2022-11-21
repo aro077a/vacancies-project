@@ -1,0 +1,104 @@
+.card {
+  position: relative;
+  max-width: 256px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(227, 232, 241, 0.4);
+  box-shadow: 0px 2px 6px rgba(231, 236, 245, 0.5);
+  background-color: #fff;
+}
+
+.card__body {
+  padding: 12px;
+}
+
+.card__job-info {
+  margin-bottom: 20px;
+}
+
+.card__candidate-info {
+  display: flex;
+  align-items: center;
+}
+
+.card__candidate-photo {
+  width: 23px;
+  height: 23px;
+  border-radius: 6px;
+}
+
+.card__candidate-name {
+  margin-left: 8px;
+  color: var(--primary-color);
+  font-size: 12px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__job-name {
+  color: var(--primary-color);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: var(--bold-fs);
+}
+
+.card__job-location {
+  color: var(--secondary-color);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__job-salary {
+  color: var(--primary-color);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__footer {
+  padding: 12px;
+  border-top: 1px solid var(--border-light-color);
+}
+
+.card__btn {
+  width: 100%;
+}
+
+.card__btn--waiting {
+  width: 100%;
+  color: #f3a200;
+  background-color: rgba(243, 162, 0, 0.05);
+  cursor: wait;
+
+  &:hover {
+    background-color: #fff1d6;
+  }
+}
+
+.card__interview-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__footer-edit-btn {
+  width: 50px;
+}
+
+.card__footer-interview-label {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-17);
+}
+
+.card__footer-interview-date,
+.card__footer-interview-location {
+  margin-left: 7px;
+  font-weight: 500;
+  color: #000;
+}
+
+.card__footer-interview-time {
+  color: var(--color-17);
+}

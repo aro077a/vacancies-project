@@ -1,0 +1,189 @@
+@import '~/view/styles/mixins';
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.search-box__row {
+  width: 100%;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 12px;
+
+  &:first-child {
+    display: flex;
+    padding: 0 0 0 25px;
+    margin-bottom: 5px;
+  }
+
+  @include tablet {
+    height: 55px;
+    padding: 0 0 0 19px;
+  }
+}
+
+.search-box__input {
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: var(--bold-fs);
+  padding-right: 15px;
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.search-box__filters {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.2fr 1.2fr 0.9fr 0.5fr;
+  width: 100%;
+  height: 100%;
+}
+
+.search-box__filters--hide {
+  @include tablet {
+    display: none;
+  }
+}
+
+.search-box__mobile-filters--show {
+  display: none;
+  height: 100%;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.search-box__mobile-search-btn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 18px 16px;
+  background-color: var(--accent-color);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+}
+
+.search-box__mobile-filters-btn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 8px;
+}
+
+.filter-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--border-color-2);
+}
+
+.search-box__submit-btn {
+  width: 131px;
+  height: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+  background-color: var(--accent-color);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background-color: var(--accent-light-color);
+  }
+
+  &:active {
+    background-color: var(--accent-dark-color);
+  }
+}
+
+.search-box__salary-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  border-left: 1px solid #c0c4d3;
+}
+
+.search-box__salary-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--secondary-color);
+}
+
+.search-box__arrow-down {
+  height: 12px;
+  width: 12px;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.search-box__arrow-up {
+  transform: rotate(-90deg);
+}
+
+.search-box__salary {
+  margin: 0 5px;
+  font-weight: var(--bold-fs);
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.search-box__dropdown {
+  top: 70px;
+  left: 0;
+}
+
+.search-box__filter {
+  &:not(:first-child) {
+    border-left: 1px solid #c0c4d3;
+  }
+}
+
+.search-box__group-dropdown {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-left: 1px solid #c0c4d3;
+  cursor: pointer;
+  font-weight: var(--bold-fs);
+  color: var(--primary-color);
+  &--icon {
+    width: 24px;
+    height: 24px;
+    color: var(--secondary-color);
+  }
+  &--icon-right {
+    width: 12px;
+    height: 12px;
+    color: var(--primary-color);
+    display: block;
+    margin-left: auto;
+  }
+  p {
+    padding-left: 10px;
+  }
+}
+
+.dropdown {
+  z-index: 2;
+  top: 110%;
+}

@@ -1,0 +1,100 @@
+.potential-card {
+  width: 100%;
+  margin-top: 15px;
+  padding: 25px;
+  border: 1px solid var(--border-color-5);
+  border-radius: 6px;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+}
+
+.potential-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.potential-card__logo {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+
+.potential-card__company-info {
+  margin-right: auto;
+}
+
+.potential-card__position-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 7px;
+}
+
+.potential-card__added-time,
+.potential-card__company-name {
+  font-size: 12px;
+}
+
+.potential-card__match-status-caption {
+  width: 120px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color-15);
+  color: var(--color-3);
+}
+
+.potential-card__icon {
+  width: 14px;
+  height: 15px;
+  color: var(--secondary-color);
+  margin-right: 4px;
+}
+
+.potential-card__project-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 80px;
+}
+
+.potential-card__caption-wrapper {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.potential-card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.potential-card__detail {
+  margin: 25px 0;
+  color: var(--secondary-color);
+}
+
+.potential-card__match-btn {
+  width: 108px;
+}
+
+.potential-card__job-info {
+  display: flex;
+  color: var(--secondary-color);
+}
+
+.middledot {
+  margin: 0 5px;
+}

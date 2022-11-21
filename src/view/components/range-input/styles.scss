@@ -1,0 +1,133 @@
+.range {
+  width: 100%;
+  position: relative;
+}
+
+.range__input {
+  position: relative;
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: transparent;
+  z-index: 1;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    // Chrome
+    &::-webkit-slider-thumb {
+      background-color: var(--bg-primary-color);
+    }
+
+    // Firefox
+    &::-moz-range-thumb {
+      background-color: var(--bg-primary-color);
+    }
+
+    // IE
+    &::-ms-thumb {
+      background-color: var(--bg-primary-color);
+    }
+  }
+
+  // Chrome
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -6px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--secondary-text-color);
+    border: 2px solid var(--bg-primary-color);
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px rgba(164, 177, 188, 0.426885);
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      margin-top: -7px;
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    box-shadow: inset 0px 1px 5px rgba(188, 196, 208, 0.211107);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  // Firefox
+  &::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: var(--secondary-text-color);
+    border: 2px solid var(--bg-primary-color);
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px rgba(164, 177, 188, 0.426885);
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    box-shadow: inset 0px 1px 5px rgba(188, 196, 208, 0.211107);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  // IE
+  &::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: var(--secondary-text-color);
+    border: 2px solid var(--bg-primary-color);
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px rgba(164, 177, 188, 0.426885);
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    box-shadow: inset 0px 1px 5px rgba(188, 196, 208, 0.211107);
+    border-radius: 6px;
+    border-color: transparent;
+    color: transparent;
+    cursor: pointer;
+  }
+}
+
+.range__progress {
+  position: absolute;
+  height: 4px;
+  top: 8px;
+}
+
+.range__progress--filled {
+  left: 0px;
+  background-color: var(--bg-primary-color);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.range__progress--empty {
+  right: 0px;
+  background-color: var(--bg-color-21);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}

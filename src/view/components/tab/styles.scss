@@ -1,0 +1,119 @@
+@import '~/view/styles/mixins';
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 15px 30px 15px 15px;
+  background-color: #fff;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  border-radius: 12px;
+  cursor: pointer;
+
+  @include mobile {
+    min-width: 200px;
+    padding: 10px 20px 10px 10px;
+  }
+}
+
+.tab--active {
+  border: 2px solid;
+}
+
+.tab:nth-child(1) {
+  border-color: var(--color-1);
+}
+
+.tab:nth-child(2) {
+  border-color: var(--color-4);
+}
+
+.tab:nth-child(3) {
+  border-color: var(--bg-primary-color);
+}
+
+.tab:nth-child(4) {
+  border-color: var(--color-3);
+}
+
+.tab__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 15px;
+
+  @include mobile {
+    width: 49px;
+    height: 49px;
+  }
+}
+
+.tab__icon-wrapper--offers {
+  background-color: var(--bg-color-9);
+
+  > svg {
+    color: var(--color-1);
+  }
+}
+
+.tab__icon-wrapper--vacancies {
+  background-color: var(--bg-color-12);
+
+  > svg {
+    color: var(--color-4);
+  }
+}
+
+.tab__icon-wrapper--interviews {
+  background-color: var(--bg-color-10);
+
+  > svg {
+    color: var(--bg-primary-color);
+  }
+}
+
+.tab__icon-wrapper--approved {
+  background-color: var(--bg-color-11);
+
+  > svg {
+    color: var(--color-3);
+  }
+}
+
+.tab__icon {
+  width: 24px;
+  height: 24px;
+
+  @include mobile {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.tab__title {
+  color: var(--primary-color);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: var(--bold-fs);
+  text-align: center;
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.tab__count {
+  color: var(--primary-color);
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 600;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

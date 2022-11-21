@@ -1,0 +1,65 @@
+.menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color-3);
+  animation-duration: 0.2s;
+  animation-name: fade-in;
+  animation-timing-function: ease;
+  padding: 18px 20px 29px 20px;
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__close-icon {
+  width: 12px;
+  height: 12px;
+  color: var(--secondary-text-color);
+}
+
+.menu__horizontal-separator {
+  height: 4px;
+  background-color: var(--bg-secondary-color);
+  opacity: 0.1;
+  margin: 30px -20px 20px -20px;
+}
+
+.menu__create-acc-btn {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  padding: 15px 0;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+.menu__link--active {
+  color: var(--accent-color);
+}
+
+.menu__link-icon {
+  width: 20px;
+  height: 13px;
+}

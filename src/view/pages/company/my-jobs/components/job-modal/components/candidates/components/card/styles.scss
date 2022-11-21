@@ -1,0 +1,110 @@
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(227, 232, 241, 0.4);
+  box-shadow: 0px 2px 6px rgba(231, 236, 245, 0.5);
+  border-radius: 6px;
+}
+
+.card__body {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.card__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.card__logo--puzzle {
+  background-color: var(--bg-color-9);
+
+  > svg {
+    color: var(--color-1);
+  }
+}
+
+.card__logo--checkmark-in-circle {
+  background-color: var(--bg-color-12);
+
+  > svg {
+    color: var(--color-4);
+  }
+}
+
+.card__logo--chat {
+  background-color: var(--bg-color-10);
+
+  > svg {
+    color: var(--bg-primary-color);
+  }
+}
+
+.card__logo--bag-with-checkmark {
+  background-color: var(--bg-color-11);
+
+  > svg {
+    color: var(--color-3);
+  }
+}
+
+.card__logo-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.card__info {
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 7px;
+}
+
+.card__name {
+  font-size: 14px;
+  font-weight: var(--bold-fs);
+  line-height: 18px;
+  color: var(--primary-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__status {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary-color);
+}
+
+.card__time {
+  width: 25%;
+  margin-left: auto;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--secondary-color);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 0;
+  border-top: 1px solid var(--bg-color-17);
+}
+
+.card__footer-btn {
+  color: var(--bg-primary-color);
+  font-size: 12px;
+  font-weight: var(--bold-fs);
+  line-height: 16px;
+
+  &:hover {
+    color: #5956e0;
+  }
+}

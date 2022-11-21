@@ -1,0 +1,29 @@
+.overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview__block-title {
+  margin-top: 30px;
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  color: var(--color-2);
+}
+
+.overview__experience-list,
+.overview__project-list,
+.overview__license-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.overview__projects,
+.overview__experience-list {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--bg-color-8);
+}
+
+.overview__license-list {
+  padding: 20px 0;
+}

@@ -1,0 +1,21 @@
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    border-color: #ccc;
+  }
+  30% {
+    transform: translateY(-70px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+    border-color: none;
+  }
+}

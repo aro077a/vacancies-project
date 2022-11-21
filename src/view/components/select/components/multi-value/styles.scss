@@ -1,0 +1,21 @@
+.multi-value {
+  &:hover {
+    > button {
+      background-color: var(--bg-color-27) !important;
+    }
+  }
+}
+
+.multi-value__image {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.multi-value__close-icon {
+  width: 11px;
+  height: 11px;
+  color: var(--primary-color);
+}

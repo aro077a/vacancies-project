@@ -1,0 +1,37 @@
+.select-option {
+  color: var(--primary-color);
+  font-size: var(--caption-font-size);
+  line-height: 16px;
+
+  &__input {
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-8);
+    border-radius: 4px;
+    vertical-align: middle;
+    border: 1px solid var(--border-light-color);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    padding: 3px;
+    position: relative;
+  }
+
+  &__input:checked {
+    background-color: var(--bg-primary-color);
+    &::after {
+      content: url('../../../../../../../../../../assets/icons/checkmark.svg');
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      color: var(--secondary-text-color);
+      top: -4px;
+      left: 5px;
+    }
+  }
+
+  &__name {
+    position: relative;
+  }
+}

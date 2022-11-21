@@ -1,0 +1,55 @@
+@import '~/view/styles/mixins';
+
+.pagination-wrapper {
+  display: flex;
+  margin-top: 40px;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.pagination__page-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 8px;
+
+  @include mobile {
+    min-width: unset;
+    width: 100%;
+  }
+}
+
+.pagination__page-item {
+  width: 29px;
+  height: 29px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.pagination__left-arrow,
+.pagination__right-arrow {
+  width: 13px;
+  height: 13px;
+  color: var(--bg-color-6);
+}
+
+.pagination__left-arrow {
+  transform: rotate(180deg);
+}
+
+.pagination__next-btn,
+.pagination__prev-btn {
+  display: flex;
+  align-items: center;
+}
+
+.pagination__page-item--active {
+  border-radius: 50%;
+  color: #fff;
+  background-color: var(--bg-primary-color);
+}

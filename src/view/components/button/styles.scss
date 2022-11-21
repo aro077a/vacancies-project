@@ -1,0 +1,101 @@
+@import '~/view/styles/mixins';
+
+.button {
+  border-radius: 6px;
+  transition-duration: 0.2s;
+}
+
+.button--primary {
+  background-color: var(--bg-primary-color);
+  color: var(--secondary-text-color);
+
+  &:hover {
+    background-color: var(--bg-primary-light-color);
+  }
+
+  &:active {
+    background-color: var(--bg-primary-dark-color);
+  }
+}
+
+.button--secondary {
+  background-color: var(--bg-secondary-color);
+  color: var(--primary-text-color);
+
+  &:hover {
+    background-color: var(--bg-secondary-dark-color);
+  }
+
+  &:active {
+    background-color: var(--bg-secondary-light-color);
+  }
+}
+
+.button--accent {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+
+  &:hover {
+    background-color: var(--accent-light-color);
+  }
+
+  &:active {
+    background-color: var(--accent-dark-color);
+  }
+}
+
+.button--danger {
+  background-color: transparent;
+  color: var(--bg-danger-color);
+  border: 1px solid rgba(var(--border-danger-color), 0.2);
+
+  &:hover {
+    color: var(--secondary-text-color);
+    background-color: var(--bg-danger-color);
+  }
+
+  &:active {
+    background-color: transparent;
+    color: var(--bg-danger-color);
+    border-color: rgba(var(--border-danger-color), 1);
+  }
+}
+
+.button--disabled {
+  background-color: var(--muted-text-color);
+  color: var(--secondary-text-color);
+
+  &:hover,
+  &:active {
+    background-color: var(--muted-text-color);
+    color: var(--secondary-text-color);
+  }
+}
+
+.button--large {
+  width: 221px;
+  height: 55px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.button--medium {
+  width: 161px;
+  height: 45px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+
+  @include mobile {
+    width: 125px;
+  }
+}
+
+.button--small {
+  width: 99px;
+  height: 35px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}

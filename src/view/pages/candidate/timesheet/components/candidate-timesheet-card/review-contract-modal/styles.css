@@ -1,0 +1,27 @@
+.rpv-core__page-layer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.rpv-core__canvas-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  direction: ltr;
+}
+
+.rpv-core__canvas-layer canvas {
+  border-radius: 6px;
+}
+
+.rpv-core__text-layer {
+  display: none;
+}
+
+.rpv-core__inner-page {
+  height: 100%;
+}

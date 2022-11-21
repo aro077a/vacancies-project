@@ -1,0 +1,35 @@
+.card {
+  padding: 20px;
+  border: 1px solid #f7f8fc;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  border-radius: 6px;
+  background-color: #fff;
+  flex-grow: 1;
+
+  &__name {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: var(--bold-fs);
+    line-height: 20px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--primary-color);
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__label,
+  &__label {
+    color: var(--secondary-color);
+    margin-right: 5px;
+  }
+}
+
+.divider {
+  color: var(--border-light-color);
+  margin: 0 10px;
+}

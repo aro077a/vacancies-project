@@ -1,0 +1,19 @@
+.page__content-body-loading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page__content-body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px 18px;
+}
+
+.page__content-not-found {
+  margin-top: 100px;
+  text-align: center;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--primary-color);
+}

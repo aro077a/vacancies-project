@@ -1,0 +1,156 @@
+@import '~/view/styles/mixins';
+
+.card {
+  display: grid;
+  align-items: center;
+  height: 73px;
+  padding: 9px 9px 9px 38px;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+  border-radius: 8px;
+  background-color: #fff;
+  column-gap: 15px;
+  color: var(--border-color-2);
+  font-weight: var(--bold-fs);
+  font-size: 16px;
+  line-height: 27px;
+  cursor: pointer;
+
+  &--offers-view {
+    grid-template-columns: 15% 15% 15% 15% auto;
+  }
+
+  &--vacancies-view {
+    grid-template-columns: 15% 15% 15% 15% auto;
+  }
+
+  &--interviews-view {
+    grid-template-columns: 15% 15% 15% 15% 20% auto;
+  }
+
+  &--placements-view {
+    grid-template-columns: 15% 15% 15% 15% auto;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  @include tablet {
+    height: 55px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.card__job-title,
+.card__job-type {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__job-title {
+  text-decoration: underline;
+}
+
+.card__accept-btn {
+  margin-right: 9px;
+}
+
+.card__accept-btn,
+.card__decline-btn {
+  width: 127px;
+}
+
+.card__act-btns {
+  margin-left: auto;
+}
+
+.card__cv-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 50px;
+  width: 108px;
+  height: 41px;
+  padding: 7px 15px;
+  border-radius: 6px;
+}
+
+.card__review-contract-btn,
+.card__waiting-contract-btn {
+  width: 156px;
+  margin-left: auto;
+  margin-right: 40px;
+
+  @include tablet {
+    width: 100px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 20px;
+  }
+}
+
+.card__review-contract-btn,
+.card__waiting-contract-btn {
+  @include mobile {
+    height: 100%;
+  }
+}
+
+.card__job-approved-date {
+  margin-right: 80px;
+  margin-left: auto;
+  text-align: center;
+  @include tablet {
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 40px;
+  }
+}
+
+.card__waiting-contract-btn {
+  color: #f3a200;
+  background-color: rgba(243, 162, 0, 0.05);
+  cursor: wait;
+  &:hover {
+    background-color: #fff1d6;
+  }
+}
+
+.card__cv-status--sent {
+  color: var(--color-3);
+  background-color: var(--bg-color-15);
+}
+
+.card__cv-status--pending {
+  color: #f09866;
+  background-color: #fef5f0;
+}
+
+.card__job-salary-prefix {
+  color: var(--secondary-color);
+}
+
+.card__feedback-btn {
+  width: 162px;
+
+  @include tablet {
+    width: 100px;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@include tablet {
+  .hide-on-mobile {
+    display: none;
+  }
+}

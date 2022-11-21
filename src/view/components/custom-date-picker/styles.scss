@@ -1,0 +1,77 @@
+@import '~/view/styles/mixins';
+
+.DayPickerInput-Overlay--right {
+  left: initial;
+  right: 0px;
+}
+
+.date-picker__label {
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+  color: var(--muted-text-color);
+  margin-bottom: 10px;
+}
+
+.date-picker__control-wrapper {
+  position: relative;
+}
+
+.date-picker__control {
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  background-color: var(--secondary-text-color);
+  border: 1px solid var(--border-light-color);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: inset 0px 1px 5px rgba(188, 196, 208, 0.2);
+
+  > input {
+    font-size: var(--input-font-size);
+    line-height: var(--input-line-height);
+    color: var(--primary-color);
+
+    &::placeholder {
+      color: var(--muted-text-color);
+    }
+  }
+}
+
+.date-picker__control--error {
+  border-color: var(--error-color);
+}
+
+.date-picker__control--error {
+  border-color: var(--error-color);
+}
+
+.date-picker__calendar-icon {
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 24px;
+  width: 14px;
+  height: 14px;
+  color: var(--bg-primary-color);
+}
+
+.date-picker__day-picker-wrapper {
+  @include mobile {
+    padding-bottom: 60px;
+  }
+}
+
+.date-picker__error-message {
+  font-size: var(--error-message-font-size);
+  line-height: var(--error-message-line-height);
+  color: var(--error-color);
+  margin-top: 2px;
+}
+
+.date-picker__hint-message {
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+  color: var(--color-15);
+  margin-top: 10px;
+}

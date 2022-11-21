@@ -1,0 +1,122 @@
+@import '~/view/styles/mixins';
+
+.modal-contact {
+  width: 625px;
+  padding: 40px;
+  max-height: 73vh;
+}
+
+.modal-contact__body-header {
+  > p {
+    color: var(--secondary-color);
+    line-height: 27px;
+  }
+}
+
+.page__field {
+  margin-top: 24px;
+
+  @include mobile {
+    margin-top: 20px;
+  }
+}
+
+.modal-contact__body-type {
+  margin: 16px 0 10px;
+  color: var(--secondary-color);
+}
+
+.modal-contact__body-radio {
+  display: flex;
+  &--company,
+  &--candidate {
+    display: flex;
+    align-items: center;
+    > p {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  &--candidate {
+    margin-left: 40px;
+  }
+}
+
+.modal-contact__body-form {
+  margin-top: 24px;
+}
+.modal-contact__body-form-link {
+  margin-top: 10px;
+  > p {
+    display: inline;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: var(--caption-font-size);
+    line-height: 18px;
+    cursor: pointer;
+  }
+  > span {
+    font-size: var(--caption-font-size);
+    color: var(--secondary-color);
+    line-height: 18px;
+  }
+}
+
+.modal-contact__body-form-input {
+  margin-top: 24px;
+  > input {
+    &::placeholder {
+      color: var(--muted-text-color);
+    }
+  }
+}
+.modal-contact__body-form-last {
+  display: flex;
+  justify-content: space-between;
+  .modal-contact__body-form-input {
+    width: 48%;
+  }
+}
+
+.modal-contact__body-form-button {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.modal-manager__body-form-input--flex {
+  display: grid;
+  grid-template-columns: 2fr 1.1fr;
+  column-gap: 24px;
+  margin-top: 24px;
+}
+
+.page__field-label {
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+  color: var(--muted-text-color);
+  margin-bottom: 10px;
+}
+
+.page__position-types-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page__position-type {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+.page__position-type-label {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--primary-color);
+  margin-left: 10px;
+}

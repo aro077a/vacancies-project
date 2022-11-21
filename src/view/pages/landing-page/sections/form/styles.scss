@@ -1,0 +1,88 @@
+@import '~/view/styles/mixins';
+
+.section {
+  padding: 280px 154px 160px 154px;
+
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.section__subscribe {
+  position: relative;
+  border-radius: 25px;
+  background-color: #06091e;
+}
+
+.section__modal {
+  position: relative;
+  z-index: 1;
+  top: 82px;
+  left: 86px;
+  width: 462px;
+  padding: 50px 50px 65px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 34px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+
+  @include tablet {
+    width: 100%;
+    position: unset;
+  }
+}
+
+.section__modal-title {
+  color: #1c1c1e;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+
+.section__modal-description {
+  margin: 15px 0 50px 0;
+  color: #2c3453;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 32px;
+}
+
+.section__modal-form {
+  display: flex;
+  align-items: center;
+}
+
+.section__subscribe-btn {
+  width: 122px;
+  margin-left: -15px;
+}
+
+.section__ellipse {
+  position: absolute;
+  top: 0;
+  left: 56px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.section__phones {
+  position: absolute;
+  bottom: 0;
+  right: 66px;
+  width: 411px;
+  height: 531px;
+
+  & img {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 20px;
+  }
+}

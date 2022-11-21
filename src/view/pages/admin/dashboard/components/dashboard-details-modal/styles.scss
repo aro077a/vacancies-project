@@ -1,0 +1,66 @@
+.modal {
+  min-width: 875px;
+}
+
+.modal__labels {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px 8px 20px;
+  column-gap: 10px;
+  background-color: var(--color-13);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}
+
+.modal__list {
+  height: 50vh;
+  overflow: auto;
+}
+
+.modal__list-item {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  font-weight: var(--bold-fs);
+  color: var(--primary-color);
+  line-height: 27px;
+  column-gap: 10px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--border-light-color);
+  }
+}
+
+.modal__labels--jobs,
+.modal__list-item--jobs {
+  grid-template-columns: 1fr 0.8fr 0.6fr 0.6fr 0.5fr;
+}
+
+.modal__labels--interviews,
+.modal__list-item--interviews {
+  grid-template-columns: 1fr 0.8fr 0.6fr 0.6fr 0.5fr 0.5fr 0.5fr;
+}
+
+.modal__labels--placements,
+.modal__list-item--placements {
+  grid-template-columns: 1fr 0.8fr 0.6fr 0.6fr 0.5fr 0.5fr 0.8fr;
+}
+
+.modal__labels--revenues,
+.modal__list-item--revenues {
+  grid-template-columns: 1fr 0.8fr 0.6fr 0.6fr 0.5fr 0.5fr 0.5fr;
+}
+
+.modal__labels--temp-works,
+.modal__list-item--temp-works {
+  grid-template-columns: 1fr 0.8fr 0.6fr 0.6fr 0.5fr 0.7fr;
+}
+
+.modal__loader {
+  margin-top: 10px;
+}

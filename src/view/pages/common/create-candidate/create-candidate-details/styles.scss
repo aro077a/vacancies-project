@@ -1,0 +1,175 @@
+@import '~/view/styles/mixins';
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+  @include mobile {
+    align-items: flex-start;
+  }
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--primary-color);
+}
+
+.page__title--edit-mode {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--primary-color);
+}
+
+.page__order-number {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 47px;
+  color: var(--primary-color);
+
+  > span {
+    color: var(--secondary-color);
+  }
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+.page__subtitle {
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.page__field {
+  margin-bottom: 24px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.page__section-title {
+  font-weight: bold;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--color-2);
+  margin-bottom: 16px;
+}
+
+.page__section-add-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: var(--accent-light-color);
+
+    > svg {
+      color: var(--accent-light-color);
+    }
+  }
+}
+
+.page__section-add-button-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--accent-color);
+  margin-left: 6px;
+}
+
+.page__section-error-message {
+  font-size: var(--error-message-font-size);
+  line-height: var(--error-message-line-height);
+  color: var(--error-color);
+  margin-top: 2px;
+}
+
+.page__form-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+
+  @include mobile {
+    margin-top: 20px;
+  }
+}
+
+.page__form-footer-button {
+  margin-left: auto;
+
+  @include mobile {
+    width: 164px;
+  }
+}
+
+.page__field-add-skill {
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+.page__field-skills-title {
+  font-weight: bold;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--color-2);
+  margin-bottom: 16px;
+}
+
+.page__position-types-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page__position-type {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+.page__position-type-label {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--primary-color);
+  margin-left: 10px;
+}
+
+.page__field-label {
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+  color: var(--muted-text-color);
+  margin-bottom: 10px;
+}

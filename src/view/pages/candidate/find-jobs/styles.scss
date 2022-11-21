@@ -1,0 +1,58 @@
+@import '~/view/styles/mixins';
+
+.page__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+
+  @include mobile {
+    margin-bottom: 18px;
+  }
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--secondary-text-color);
+
+  @include mobile {
+    font-size: 27px;
+    line-height: 37px;
+  }
+}
+
+.page__vacancies-count,
+.page__divider {
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: var(--bold-fs);
+  opacity: 0.4;
+}
+
+.page__divider {
+  margin: 0 15px;
+}
+
+.page__subtitle {
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.page__jobs-count {
+  color: var(--secondary-color);
+}
+
+.page__content {
+  display: flex;
+  margin-top: 30px;
+}
+
+.page__job-list {
+  width: 100%;
+}

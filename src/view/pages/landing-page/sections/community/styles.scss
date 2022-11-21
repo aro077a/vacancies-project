@@ -1,0 +1,84 @@
+@import '~/view/styles/mixins';
+
+.section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  padding: 60px 100px;
+  border-radius: 25px;
+  background-color: #06091e;
+
+  @include tablet {
+    height: auto;
+    padding: 20px 20px 80px 20px;
+    flex-wrap: wrap;
+  }
+}
+
+.section__banner {
+  width: 60%;
+
+  & img {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.section__content {
+  width: 40%;
+  margin-bottom: 50px;
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: unset;
+  }
+}
+
+.section__caption {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--accent-color);
+}
+
+.section__title {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #fff;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 50px;
+  }
+}
+
+.section__description {
+  margin: 15px 0 25px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.section__list {
+  margin-left: 15px;
+}
+
+.section__list-item {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+
+  &::marker {
+    color: var(--accent-color);
+  }
+}

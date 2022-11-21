@@ -1,0 +1,72 @@
+.page {
+  &__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > h1 {
+      font-weight: var(--bold-fs);
+      font-size: var(--h1-font-size);
+      line-height: var(--h1-line-height);
+      color: var(--primary-color);
+    }
+  }
+  &__timesheet {
+    margin-top: 27px;
+    &-header {
+      display: grid;
+      grid-template-columns: 12% 12% 14% 9% 9% 20% auto;
+      justify-content: flex-start;
+      padding: 15px 0px 16px 40px;
+      align-items: center;
+      color: var(--secondary-color);
+      font-size: 14px;
+      @media (max-width: 800px) {
+        grid-template-columns: 30% 30% 40%;
+        padding: 15px 0px 16px 20px;
+      }
+      &-candidate,
+      &-status,
+      &-location,
+      &-position {
+        display: flex;
+        align-items: center;
+        &-arrow {
+          margin-left: 5px;
+          width: 10px;
+          height: 10px;
+        }
+      }
+      @media (max-width: 800px) {
+        &-location,
+        &-position,
+        &-rate,
+        &-total-hours {
+          display: none;
+        }
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      &-not-found {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 10vh;
+        background-color: var(--bg-color-28);
+      }
+      &-items {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        &-loader {
+          width: 100%;
+          min-height: 10vh;
+          background-color: var(--bg-color-28);
+        }
+      }
+    }
+  }
+}

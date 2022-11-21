@@ -1,0 +1,53 @@
+.payment-report {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+      font-size: var(--h3-font-size);
+      line-height: var(--h3-line-height);
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+  }
+  &__table {
+    margin-top: 27px;
+    &-header {
+      display: grid;
+      grid-template-columns: 50% 19% 16% 15%;
+      justify-content: flex-start;
+      padding: 15px 0px 16px 20px;
+      align-items: center;
+      background-color: var(--color-13);
+      color: var(--secondary-color);
+      font-size: 14px;
+      &-customer,
+      &-invoice,
+      &-total,
+      &-status {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      &-not-found {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 10vh;
+        background-color: var(--bg-color-28);
+      }
+      &-items {
+        &-loader {
+          width: 100%;
+          min-height: 10vh;
+          background-color: var(--bg-color-28);
+        }
+      }
+    }
+  }
+}

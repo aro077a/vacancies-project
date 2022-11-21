@@ -1,0 +1,77 @@
+@import '~/view/styles/mixins';
+
+.modal-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: var(--bg-color-14);
+  padding: 0px 8px;
+  display: flex;
+  justify-content: center;
+  animation-duration: 0.2s;
+  animation-name: fade-in;
+  animation-timing-function: ease;
+}
+
+.modal-wrapper__modal {
+  position: relative;
+  width: 408px;
+  max-height: 72vh;
+  align-self: flex-start;
+  overflow-y: auto;
+  background-color: var(--secondary-text-color);
+  box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 30px;
+  margin: 14vh 0px;
+
+  @include mobile {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
+
+.modal-wrapper__modal-header {
+  margin-bottom: 20px;
+}
+
+.modal-wrapper__modal-title {
+  font-weight: bold;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--primary-color);
+}
+
+.modal-wrapper__modal-subtitle {
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+
+.modal-wrapper__modal-close-button {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  padding: 5px;
+  display: flex;
+}
+
+.modal-wrapper__modal-close-icon {
+  width: 11px;
+  height: 11px;
+  color: var(--primary-color);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

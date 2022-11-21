@@ -1,0 +1,62 @@
+.candidates__section {
+  margin-bottom: 26px;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+.candidates__section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.candidates__section-title {
+  font-weight: 600;
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  color: var(--primary-color);
+  margin-bottom: 8px;
+
+  > span {
+    color: var(--secondary-color);
+  }
+}
+
+.candidates__section-title--dark {
+  color: var(--primary-text-color);
+  margin-bottom: 0px;
+}
+
+.candidates__section-subtitle {
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+  color: var(--secondary-color);
+}
+
+.candidates__section-search-input {
+  width: 292px;
+}
+
+.candidates__cards {
+  display: grid;
+  grid-template-columns: repeat(3, calc(33% - 6px));
+  grid-column-gap: 9px;
+  grid-row-gap: 9px;
+  justify-content: space-between;
+}
+
+.candidates__no-candidate-found-message {
+  text-align: center;
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  color: var(--muted-text-color);
+  margin-top: 50px;
+}
+
+.candidates__modal {
+  width: 55%;
+  min-width: 803px;
+}

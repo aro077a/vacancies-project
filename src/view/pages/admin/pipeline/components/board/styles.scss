@@ -1,0 +1,8 @@
+.board {
+  display: flex;
+  min-height: calc(100vh - 202px);
+  flex-direction: row;
+  overflow: auto;
+  column-gap: 29px;
+  padding: 0 50px;
+}

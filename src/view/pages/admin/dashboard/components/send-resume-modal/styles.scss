@@ -1,0 +1,105 @@
+.modal-send-resume {
+  width: 820px;
+  padding: 40px 30px;
+  &__body {
+    &-header {
+      display: flex;
+      justify-content: flex-start;
+      gap: 25px;
+      &--select {
+        width: 348px;
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid var(--bg-color-8);
+      border-bottom: 1px solid var(--bg-color-8);
+      margin-top: 30px;
+      padding: 30px 0;
+      &--title {
+        font-weight: 600;
+        font-size: var(--h4-font-size);
+        line-height: var(--h4-line-height);
+        color: var(--color-2);
+      }
+      &-item {
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        &--select {
+          width: 47%;
+          &:nth-child(2) {
+            margin-left: 25px;
+          }
+        }
+        &--remove {
+          width: 24px;
+          height: 24px;
+          margin-top: 25px;
+          cursor: pointer;
+          svg {
+            margin-left: 10px;
+          }
+        }
+      }
+      &-add {
+        margin-top: 20px;
+        font-weight: var(--bold-fs);
+        line-height: var(--label-line-height);
+        color: var(--accent-color);
+        width: 25%;
+        cursor: pointer;
+      }
+    }
+
+    &-button {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  &__error {
+    color: var(--error-color);
+    margin-top: 10px;
+  }
+}
+
+.page__field {
+  margin-bottom: 20px;
+}
+
+.modal-send-resume__textarea,
+.modal-send-resume__input {
+  margin-top: 16px;
+}
+
+.page__position-types-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page__position-type {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+.page__position-type-label {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--primary-color);
+  margin-left: 10px;
+}
+
+.page__field-label {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--color-2);
+  margin-bottom: 10px;
+}

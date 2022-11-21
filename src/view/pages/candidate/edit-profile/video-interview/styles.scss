@@ -1,0 +1,104 @@
+@import '~/view/styles/mixins';
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page__header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.page__title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--primary-color);
+}
+
+.page__interview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page__interview-icon {
+  width: 92px;
+  height: 82.5px;
+  color: var(--bg-primary-color);
+}
+
+.page__interview-info {
+  font-size: var(--h5-font-size);
+  line-height: 22px;
+  color: var(--secondary-color);
+  max-width: 484px;
+  margin-top: 25px;
+}
+
+.page__start-interview-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  @media (max-width: 800px) {
+    width: 70%;
+  }
+  margin-top: 35px;
+}
+
+.page__start-interview-btn-icon {
+  width: 21px;
+  height: 12px;
+}
+
+.page__save-btn {
+  margin-left: auto;
+  margin-top: auto;
+  @media (max-width: 800px) {
+    width: 100%;
+    margin-top: 53px;
+  }
+}
+
+.page__no-video-message {
+  color: var(--secondary-color);
+}
+
+.page__interview-buttons {
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.page__record-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.page__save-changes-btn {
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.page__record-icon {
+  width: 21px;
+  height: 12px;
+  margin-right: 6px;
+}

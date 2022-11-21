@@ -1,0 +1,181 @@
+@import './reset.scss';
+@import './fonts.scss';
+@import './mixins.scss';
+
+:root {
+  // setup your variables
+  // DO NOT call color variables as color name (e.g. red-color, green-color, blue-color)
+
+  // project colors
+  --primary-color: #110f48;
+  --secondary-color: #706f91;
+  --error-color: #eb5757;
+
+  // text colors
+  --primary-text-color: #000000;
+  --secondary-text-color: #ffffff;
+  --muted-text-color: #9b9ab2;
+  --text-color-1: #141b53;
+
+  // background colors
+  --bg-primary-color: #3e3c99;
+  --bg-primary-light-color: #514fb4;
+  --bg-primary-dark-color: #2a2885;
+
+  --bg-secondary-color: #f3f3f9;
+  --bg-secondary-light-color: #f2f2ff;
+  --bg-secondary-dark-color: #e0e0e8;
+
+  --bg-danger-color: #fb5d5d;
+
+  --bg-hover-color: #fbfbfb;
+
+  --bg-color-1: #f6f8fb;
+  --bg-color-2: #f6f8fc;
+  --bg-color-3: #0e1729;
+  --bg-color-4: #3f4059;
+  --bg-color-5: #ff5254;
+  --bg-color-6: #5b6db6;
+  --bg-color-7: #c0c0fd33;
+  --bg-color-8: #e9ebf2;
+  --bg-color-9: #deefff;
+  --bg-color-10: #e6e6fa;
+  --bg-color-11: #e2f4ef;
+  --bg-color-12: #f4e2ff;
+  --bg-color-13: #fff9ef;
+  --bg-color-14: #11111e66;
+  --bg-color-15: #ecf8f4;
+  --bg-color-16: #fdeeee;
+  --bg-color-17: #f4f6f9;
+  --bg-color-18: #ececf5;
+  --bg-color-19: #ffeee4;
+  --bg-color-20: #6752e3;
+  --bg-color-21: #dadaeb;
+  --bg-color-22: #f7f7f9;
+  --bg-color-23: #52b7e3;
+  --bg-color-24: #fe8e6b;
+  --bg-color-25: #64daaf;
+  --bg-color-26: #f0f0f3;
+  --bg-color-27: #e5e5ee;
+  --bg-color-28: #f8f9fd;
+  --bg-color-29: #f9f9fc;
+  --bg-color-30: #ffeded;
+  --bg-color-31: #fff6ec;
+  --bg-color-32: #f4f4fa;
+  --bg-color-33: #7ed897;
+
+  // border colors
+  --border-light-color: #e3e8f1;
+  --border-danger-color: 251, 93, 93;
+
+  --border-color-1: #336aff;
+  --border-color-2: #272946;
+  --border-color-3: #f4f4f4;
+  --border-color-4: #ebebeb;
+  --border-color-5: #f7f8fc;
+  --border-color-6: #cdefb8;
+  --border-color-7: #dddded;
+  --border-color-8: #e7e6f8;
+
+  // colors
+  --accent-color: #ff7528;
+  --accent-light-color: #ff8947;
+  --accent-dark-color: #f56d22;
+
+  --color-1: #2697ff;
+  --color-2: #292c38;
+  --color-3: #3cb593;
+  --color-4: #a153d1;
+  --color-5: #ffbb54;
+  --color-6: #ee5e60;
+  --color-7: #9e9e9e;
+  --color-8: #f5f6fb;
+  --color-9: #fef6f6;
+  --color-10: #fffaf6;
+  --color-11: #ed6a62;
+  --color-12: #ffa767;
+  --color-13: #f6f6f8;
+  --color-14: #66d184;
+  --color-15: #a9a9bd;
+  --color-16: #58c813;
+  --color-17: #9caab8;
+  --color-18: #fa4f4f;
+  --color-19: #fda53e;
+  --color-20: #d62121;
+  --color-21: #89909e;
+
+  // sizes
+  --h1-font-size: 38px;
+  --h1-line-height: 63px;
+
+  --h2-font-size: 24px;
+  --h2-line-height: 28px;
+
+  --h3-font-size: 22px;
+  --h3-line-height: 37px;
+
+  --h4-font-size: 18px;
+  --h4-line-height: 30px;
+
+  --h5-font-size: 16px;
+  --h5-line-height: 27px;
+
+  --paragraph-font-size: 16px;
+  --paragraph-line-height: 27px;
+
+  --caption-font-size: 14px;
+  --caption-line-height: 18px;
+
+  --label-font-size: 16px;
+  --label-line-height: 20px;
+
+  --input-font-size: 18px;
+  --input-line-height: 20px;
+
+  --error-message-font-size: 11px;
+  --error-message-line-height: 18px;
+
+  //font weights
+
+  --thin-fs: 300;
+  --regular-fs: 400;
+  --bold-fs: 500;
+}
+
+@include mobile {
+  :root {
+    // sizes
+    --h1-font-size: 30px;
+    --h1-line-height: 40px;
+
+    --h3-font-size: 18px;
+    --h3-line-height: 31px;
+  }
+}
+
+body {
+  width: 100%;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+  font-size: var(--paragraph-font-size);
+  color: var(--primary-text-color);
+}
+
+.DraftEditor-root {
+  flex: 1;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: padding-box rgb(227, 232, 241);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-image: initial;
+  border-radius: 16px;
+}

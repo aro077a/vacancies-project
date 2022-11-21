@@ -1,0 +1,52 @@
+.payment-report__table-content-item {
+  display: grid;
+  grid-template-columns: 50% 19% 16% 15%;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--secondary-text-color);
+  padding: 16px 0px 16px 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--border-light-color);
+  &-customer {
+    width: unset;
+    &--company {
+      font-weight: var(--bold-fs);
+      font-size: var(--paragraph-font-size);
+      line-height: var(--paragraph-line-height);
+      color: var(--primary-color);
+    }
+    &--location {
+      margin-top: 5px;
+      font-size: var(--caption-font-size);
+      line-height: var(--caption-line-height);
+      color: var(--secondary-color);
+    }
+  }
+  &-total,
+  &-invoice {
+    font-weight: var(--bold-fs);
+    font-size: var(--paragraph-font-size);
+    line-height: var(--paragraph-line-height);
+    color: var(--primary-color);
+  }
+
+  &-status {
+    border-radius: 6px;
+    padding: 12px 23px;
+    font-weight: var(--bold-fs);
+    line-height: var(--caption-line-height);
+    font-size: var(--caption-font-size);
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    &--paid {
+      background: var(--bg-color-15);
+      color: var(--color-3);
+    }
+    &--unpaid {
+      background: var(--color-13);
+      color: var(--secondary-color);
+    }
+  }
+}

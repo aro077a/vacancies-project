@@ -1,0 +1,16 @@
+.candidate-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 15px;
+  gap: 20px 18px;
+}
+
+.candidate-not-found {
+  margin-top: 100px;
+  text-align: center;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--primary-color);
+}

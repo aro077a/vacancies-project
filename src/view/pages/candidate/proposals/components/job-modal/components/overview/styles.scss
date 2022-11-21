@@ -1,0 +1,57 @@
+@import '~/view/styles/mixins';
+
+.overview__labels {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--bg-color-8);
+  row-gap: 20px;
+}
+
+.overview__labels-item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  color: var(--secondary-color);
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.overview__labels-item-icon {
+  width: 16px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.overview__labels-item-caption {
+  font-weight: var(--bold-fs);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.overview__labels-item-value {
+  color: var(--primary-color);
+}
+
+.overview__description {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--bg-color-8);
+}
+
+.overview__description-title {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.overview__no-description-message {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}

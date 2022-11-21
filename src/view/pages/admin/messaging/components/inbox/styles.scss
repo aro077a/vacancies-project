@@ -1,0 +1,13 @@
+.content__title {
+  margin-bottom: 25px;
+  color: var(--primary-color);
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.content__list {
+  height: 40vh;
+  padding: 10px 0;
+  overflow: auto;
+}

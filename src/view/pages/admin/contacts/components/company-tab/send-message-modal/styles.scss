@@ -1,0 +1,67 @@
+.modal-message {
+  width: 625px;
+  padding: 40px;
+}
+
+.modal-message__body-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-message__body-header-label {
+  color: var(--secondary-color);
+}
+
+.modal-message__body-header-add {
+  color: var(--accent-color);
+  cursor: pointer;
+  span {
+    color: var(--accent-color);
+    font-size: var(--h4-font-size);
+    font-weight: 600;
+  }
+}
+
+.modal-message__body-textarea {
+  textarea {
+    min-height: 225px;
+  }
+}
+
+.modal-message__body-send {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.modal-message__body-image-wrapper {
+  display: grid;
+  align-items: center;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+}
+.modal-message__body-image-content {
+  position: relative;
+  width: 127px;
+  height: 102px;
+  border-radius: 2px;
+  margin-top: 12px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    opacity: 0.21;
+  }
+  svg {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+}
+.modal__company-video {
+  width: 127px;
+  height: 103px;
+}

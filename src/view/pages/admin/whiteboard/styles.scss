@@ -1,0 +1,33 @@
+.page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--secondary-text-color);
+}
+
+.page__total-wrapper {
+  color: #868b94;
+  font-size: 24px;
+  font-weight: var(--bold-fs);
+  line-height: 40px;
+}
+
+.page__total-count {
+  color: #fff;
+  font-weight: 700;
+}
+
+.page__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, 50%);
+  gap: 25px 30px;
+  height: 75vh;
+}

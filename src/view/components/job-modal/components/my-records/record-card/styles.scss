@@ -1,0 +1,88 @@
+.my-records__body {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.my-records__body-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.my-records__body-block-children {
+  display: flex;
+  flex-direction: column;
+}
+.my-records__body-user {
+  display: flex;
+  align-items: center;
+}
+
+.my-records__body-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.my-records__body-user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 9px;
+  object-fit: cover;
+  margin-top: 5px;
+}
+
+.my-records__body-user-block {
+  display: flex;
+  gap: 7px;
+}
+
+.my-records__body-user-name {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.my-records__body-user-date {
+  font-size: var(--caption-font-size);
+  line-height: 18px;
+  color: var(--color-7);
+}
+
+.my-records__body-user-message {
+  margin-top: 4px;
+  color: var(--secondary-color);
+  max-width: 715px;
+  line-height: 27px;
+  word-break: break-word;
+  margin-right: 10px;
+}
+
+.my-records__no-record-message {
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.my-records__record {
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  color: var(--secondary-color);
+  white-space: break-spaces;
+  word-break: break-all;
+}
+
+.my-records__dots-dropdown {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  > div {
+    top: 0%;
+    right: 70%;
+  }
+}
+
+.my-records__body-user-info {
+  width: 100%;
+  overflow: hidden;
+}

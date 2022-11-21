@@ -1,0 +1,35 @@
+.terms {
+  padding: 100px 250px;
+  background-color: #fafafd;
+  @media (max-width: 1024px) {
+    padding: 50px 130px;
+  }
+  @media (max-width: 475px) {
+    padding: 50px;
+  }
+  &__header {
+    &--caption {
+      color: var(--accent-color);
+      font-size: var(--h4-font-size);
+      font-weight: 700;
+      line-height: (--h4-line-height);
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    &--title {
+      color: #06091e;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 70px;
+      margin-bottom: 20px;
+    }
+    &--info {
+      color: #2c3453;
+      line-height: 32px;
+      font-weight: var(--bold-fs);
+    }
+  }
+}
+.home-fifth-wrapper {
+  padding: 0 !important;
+}

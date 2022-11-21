@@ -1,0 +1,10 @@
+.modal-assign-admin {
+  overflow-y: unset !important;
+  &__select {
+    margin-bottom: 20px;
+  }
+  &__button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

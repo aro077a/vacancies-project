@@ -1,0 +1,54 @@
+.modal-license,
+.modal-license--resizable {
+  position: relative;
+  &--upload-label {
+    font-size: var(--label-font-size);
+    line-height: var(--label-line-height);
+    color: var(--muted-text-color);
+    margin-bottom: 10px;
+  }
+  &__input {
+    font-size: var(--h4-font-size);
+    line-height: var(--label-line-height);
+    color: var(--primary-color);
+    padding-left: 10px;
+    &::placeholder {
+      font-size: var(--h4-font-size);
+      line-height: var(--label-line-height);
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    border: 1px solid var(--border-light-color);
+    height: 60px;
+    border-radius: 6px;
+    p {
+      width: 99px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-secondary-color);
+      border-radius: 6px;
+      font-weight: var(--bold-fs);
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+  }
+  &__date-picker {
+    margin-top: 24px;
+  }
+  &__upload-btn {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.modal-license--resizable {
+  height: 43vh;
+}

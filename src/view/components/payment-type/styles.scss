@@ -1,0 +1,25 @@
+.payment-type__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+
+.payment-type__labels {
+  display: flex;
+  align-items: center;
+}
+
+.payment-type__label {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.payment-type__label-text {
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-2);
+}

@@ -1,0 +1,76 @@
+@import '~/view/styles/mixins';
+
+.labels {
+  display: grid;
+  padding: 4px 9px 4px 38px;
+  margin-bottom: 6px;
+  column-gap: 15px;
+  color: var(--secondary-color);
+
+  &--offers-view {
+    grid-template-columns: 15% 15% 15% 15% auto;
+  }
+
+  &--vacancies-view {
+    grid-template-columns: 15% 15% 15% 15% auto;
+  }
+
+  &--interviews-view {
+    grid-template-columns: 15% 15% 15% 15% 20% auto;
+  }
+
+  &--placements-view {
+    grid-template-columns: 15% 15% 15% 15% auto;
+  }
+
+  @include tablet {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.labels__item--status {
+  width: 108px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.labels__item--placement {
+  width: 156px;
+  margin-left: auto;
+  margin-right: 40px;
+
+  @include tablet {
+    width: 100px;
+    margin-right: 20px;
+  }
+}
+
+.labels__hide-on-mobile {
+  @include tablet {
+    display: none;
+  }
+}
+
+.tab-content__job-list {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.tab-content__no-matched-message {
+  padding-left: 38px;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--secondary-color);
+}
+
+@include tablet {
+  .hide-on-mobile {
+    display: none;
+  }
+}

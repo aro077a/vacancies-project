@@ -1,0 +1,110 @@
+.edit-candidate__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 21px 25px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 7px 90px rgba(180, 191, 196, 0.12);
+  margin-bottom: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 21px 0px;
+  }
+}
+
+.edit-candidate__info {
+  display: flex;
+  align-items: center;
+}
+
+.edit-candidate__toggle {
+  display: flex;
+  gap: 17px;
+  padding: 20px;
+  p {
+    font-weight: var(--bold-fs);
+    font-size: var(--h4-font-size);
+    line-height: 23px;
+    color: var(--secondary-color);
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    border-top: 1px solid var(--border-light-color);
+    margin-top: 19px;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+}
+
+.edit-candidate__img {
+  width: 75px;
+  height: 75px;
+  margin-right: 24px;
+  border-radius: 13px;
+}
+
+.edit-candidate__candidate-name {
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+  font-size: 30px;
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.edit-candidate__link-description {
+  color: var(--secondary-color);
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+}
+
+.edit-candidate__status-wrapper {
+  color: var(--secondary-color);
+  font-weight: var(--bold-fs);
+}
+
+.edit-candidate__status-dropdown {
+  font-size: 16px;
+}
+
+.edit-candidate__candidate-status {
+  cursor: pointer;
+}
+
+.edit-candidate__candidate-status--active {
+  color: var(--color-14);
+}
+
+.edit-candidate__candidate-status--disable {
+  color: var(--error-color);
+}
+
+.edit-candidate__link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 380px;
+  max-width: 420px;
+  padding: 10px 15px;
+  border: 1px solid var(--border-light-color);
+  border-radius: 6px;
+  background-color: #f9fafd;
+}
+
+.edit-candidate__public-link {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.edit-candidate__copy-btn {
+  color: var(--bg-primary-color);
+  text-decoration: underline;
+}

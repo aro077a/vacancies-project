@@ -1,0 +1,14 @@
+.modal__input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #e3e8f1;
+  box-shadow: inset 0px 1px 5px rgba(188, 196, 208, 0.2);
+  border-radius: 6px;
+}
+
+.modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}

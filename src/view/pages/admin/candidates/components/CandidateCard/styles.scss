@@ -1,0 +1,176 @@
+.card {
+  position: relative;
+  width: calc(25% - 14px);
+  border-radius: 12px;
+  background-color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.card__inner {
+  padding: 29px 25px;
+}
+
+.card__dropdown {
+  position: absolute;
+  top: 29px;
+  right: 25px;
+  div {
+    top: 5%;
+    right: 70%;
+    button {
+      &:last-child {
+        padding-left: 14px;
+        color: var(--bg-color-5);
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.card__user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 9px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.card__user-general-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.card__user-location-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--bg-color-6);
+}
+
+.card__user-name {
+  font-size: 24px;
+  color: var(--primary-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card__user-location {
+  display: inline;
+  margin-left: 5px;
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: var(--bold-fs);
+}
+
+.card__user-personal-info {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 100px);
+  overflow: hidden;
+}
+
+.card__user-experience {
+  margin-top: 18px;
+}
+
+.card__pref-info-title {
+  margin-top: 22px;
+  color: var(--secondary-color);
+
+  &:first-child {
+    margin-top: 32px;
+  }
+}
+
+.card__user-location-info {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.card__user-tags {
+  display: flex;
+  margin-top: 10px;
+
+  & div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  & div:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.card__user-tags--extra {
+  overflow: visible !important;
+}
+
+.card__user-status-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.card__user-salary-info {
+  color: var(--secondary-color);
+  font-weight: var(--bold-fs);
+  font-size: 16px;
+
+  & span {
+    color: var(--primary-color);
+    font-size: 22px;
+  }
+}
+
+.card__user-id {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--secondary-color);
+  margin-bottom: 4px;
+}
+
+.card__email-info,
+.card__phone-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 13px;
+  padding-top: 13px;
+  &--label {
+    font-size: 12px;
+    line-height: 16px;
+    color: #706f91;
+  }
+  &--email,
+  &--phone {
+    font-size: var(--caption-font-size);
+    line-height: 18px;
+    color: var(--primary-color);
+    margin-top: 4px;
+    font-weight: 500;
+    word-break: break-all;
+  }
+  &--icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .card {
+    width: calc(33% - 10px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    width: calc(50% - 10px);
+  }
+}

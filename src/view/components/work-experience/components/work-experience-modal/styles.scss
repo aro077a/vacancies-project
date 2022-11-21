@@ -1,0 +1,86 @@
+@import '~/view/styles/mixins';
+
+.modal {
+  max-height: 92vh;
+  margin: 4vh 0px;
+  width: 843px;
+}
+
+.modal__field {
+  margin-bottom: 24px;
+
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+.modal__field-label {
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+  color: var(--muted-text-color);
+  margin-bottom: 12px;
+}
+
+.modal__name-and-logo-fields {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  grid-column-gap: 10px;
+}
+
+.modal__date-fields {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.modal__date-picker {
+  width: 260px;
+
+  @include mobile {
+    width: 47%;
+  }
+}
+
+.modal__date-picker-separator {
+  width: 7px;
+  height: 1px;
+  background-color: var(--primary-color);
+  align-self: center;
+}
+
+.modal__action-button {
+  width: 100%;
+  margin-bottom: 12px;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+.modal__action-button--current {
+  width: 260px;
+  margin: 10px 0;
+}
+.modal__field-add-project {
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+.modal__field-project-title {
+  font-weight: bold;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  color: var(--primary-color);
+  margin-top: 16px;
+}
+
+.modal__field-current {
+  display: flex;
+  justify-content: flex-end;
+}

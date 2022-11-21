@@ -1,0 +1,32 @@
+.modal__field {
+  margin-bottom: 24px;
+}
+
+.modal__submit-btn {
+  width: 100%;
+}
+
+.modal__participants {
+  margin-bottom: 24px;
+}
+
+.modal__participant {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal__participant-photo {
+  width: 31px;
+  height: 31px;
+  object-fit: contain;
+}
+
+.modal__participant-name {
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-2);
+}

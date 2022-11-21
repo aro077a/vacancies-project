@@ -1,0 +1,95 @@
+@import '~/view/styles/mixins';
+
+.modal {
+  width: 806px;
+
+  @media (max-width: 900) {
+    width: 100%;
+  }
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @include mobile {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--bg-color-8);
+  }
+}
+
+.modal__company-logo {
+  width: 55px;
+  height: 55px;
+  margin-right: 18px;
+  border-radius: 14px;
+}
+
+.modal__job-position {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modal__company-site {
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: var(--bold-fs);
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modal__tabs {
+  margin-bottom: 33px;
+}
+
+.modal__footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 13px 0;
+  background-color: #fff;
+}
+
+.modal__action-btn {
+  width: 162px;
+  height: 55px;
+  margin-right: 11px;
+}
+
+.modal__job-info {
+  overflow: hidden;
+
+  @include mobile {
+    width: 76%;
+  }
+}
+
+.modal__job-match {
+  width: 92px;
+  height: 40px;
+  margin-left: auto;
+  padding: 8px 12px;
+  color: var(--color-3);
+  background-color: var(--bg-color-15);
+  font-size: 14px;
+  font-weight: var(--bols-fs);
+  line-height: 24px;
+  border-radius: 6px;
+
+  @include mobile {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+}

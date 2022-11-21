@@ -1,0 +1,105 @@
+@import '~/view/styles/mixins';
+
+.feedback-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px 20px 25px 25px;
+  border: 1px solid var(--border-color-5);
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 13px rgba(34, 33, 50, 0.05);
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.feedback-card__body {
+  width: 100%;
+}
+
+.feedback-card__header {
+  display: flex;
+  color: var(--primary-color);
+  font-size: var(--h5-font-size);
+  font-weight: var(--bold-fs);
+  line-height: var(--h5-line-height);
+
+  @include mobile {
+    margin-top: 10px;
+  }
+}
+
+.feedback-card__company-logo {
+  width: 44px;
+  height: 44px;
+  margin-right: 15px;
+  border-radius: 6px;
+}
+
+.feedback-card__company-name {
+  margin-right: 5px;
+}
+
+.feedback-card__job-position {
+  margin-left: 5px;
+  font-weight: var(--bold-fs);
+  text-decoration: underline;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.feedback-card__text {
+  margin: 0 0 8px 0;
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  color: var(--secondary-color);
+}
+
+.feedback-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback-card__reply-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.feedback-card__reply-btn {
+  margin-right: 10px;
+  color: var(--bg-color-6);
+  font-size: 14px;
+  font-weight: var(--bold-fs);
+  cursor: pointer;
+}
+
+.feedback-card__reply-time,
+.feedback-card__created-time {
+  color: var(--color-7);
+  font-size: 14px;
+  font-weight: var(--regular-fs);
+}
+
+.feedback-card__reply-time {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  @include mobile {
+    max-width: 92px;
+  }
+}
+
+@include mobile {
+  .feedback-card__dots {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

@@ -1,0 +1,37 @@
+@import '~/view/styles/mixins';
+
+.looking-job__label {
+  font-size: var(--label-font-size);
+  line-height: var(--label-line-height);
+  color: var(--muted-text-color);
+  margin-bottom: 10px;
+}
+
+.looking-job__statuses {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.looking-job__status {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 36px;
+
+  &:last-of-type {
+    margin-right: 0px;
+  }
+
+  @include mobile {
+    margin-right: 25px;
+    margin-bottom: 5px;
+  }
+}
+
+.looking-job__status-label {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-2);
+  margin-left: 10px;
+}

@@ -1,0 +1,56 @@
+.reply {
+  position: relative;
+  background-color: var(--secondary-text-color);
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+.reply__admin-badge {
+  width: 44px;
+  height: 44px;
+  margin-right: 16px;
+}
+
+.reply__info-wrapper {
+  flex: 1;
+}
+
+.reply__header {
+  display: flex;
+  align-items: center;
+}
+
+.reply__user-image {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 7px;
+  margin-top: 5px;
+  margin-right: 16px;
+}
+
+.reply__user-name {
+  font-weight: 500;
+  font-size: var(--h5-font-size);
+  line-height: var(--h5-line-height);
+  color: var(--primary-color);
+  margin-right: 6px;
+}
+
+.reply__date {
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+  color: var(--color-7);
+}
+
+.reply__text {
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  color: var(--secondary-color);
+  white-space: break-spaces;
+}

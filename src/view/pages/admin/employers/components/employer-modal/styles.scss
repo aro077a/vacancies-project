@@ -1,0 +1,64 @@
+.modal {
+  width: 50%;
+  min-width: 806px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    min-width: initial;
+  }
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.modal__employer {
+  display: flex;
+  align-items: center;
+}
+
+.modal__employer-image {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  object-fit: contain;
+  margin-right: 18px;
+}
+
+.modal__employer-name {
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.modal__employer-location-info {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  color: var(--secondary-color);
+}
+
+.modal__employer-location {
+  font-size: 14px;
+}
+
+.modal__employer-location-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+.modal__body-job {
+  &-title {
+    margin-top: 30px;
+    font-size: var(--h4-font-size);
+    line-height: var(--h4-line-height);
+    color: var(--color-2);
+  }
+}

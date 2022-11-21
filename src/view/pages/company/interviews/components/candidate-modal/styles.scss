@@ -1,0 +1,203 @@
+@import '~/view/styles/mixins';
+
+.modal {
+  width: 806px;
+
+  @media (max-width: 900) {
+    width: 100%;
+  }
+}
+
+.modal--with-footer {
+  padding-bottom: 60px;
+
+  @include mobile {
+    padding-bottom: 110px;
+  }
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.modal__candidate {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.modal__candidate-info {
+  overflow: hidden;
+
+  @include mobile {
+    max-width: 120px;
+  }
+}
+
+.modal__candidate-image {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  object-fit: contain;
+  margin-right: 18px;
+}
+
+.modal__candidate-name {
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24px;
+  color: var(--primary-color);
+
+  @include mobile {
+    width: 120px;
+  }
+}
+
+.modal__candidate-location-info {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  color: var(--secondary-color);
+}
+
+.modal__candidate-location {
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+
+.modal__candidate-location-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.modal__status-wrapper {
+  margin-left: 5px;
+  color: var(--secondary-color);
+}
+
+.modal__candidate-status--active {
+  color: var(--color-14);
+}
+
+.modal__candidate-status--disable {
+  color: var(--error-color);
+}
+
+.modal__footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 13px 0;
+  background-color: var(--secondary-text-color);
+
+  @include mobile {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+}
+
+.modal__footer-btn {
+  width: 172px;
+
+  &:first-child {
+    margin-right: 12px;
+  }
+
+  @include mobile {
+    width: 162px;
+  }
+}
+
+.modal__footer-disclose {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+
+  @include mobile {
+    margin: 0 0 35px 0;
+  }
+}
+
+.modal__footer-disclose-label {
+  margin-left: 10px;
+  color: var(--secondary-color);
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.modal__divider {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  width: 804px;
+  height: 1px;
+  background-color: #eeeef2;
+}
+
+.modal__tabs {
+  margin-bottom: 30px;
+}
+
+.modal__candidate-status-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  column-gap: 10px;
+}
+
+.modal__candidate-status {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: var(--color-3);
+  background-color: var(--bg-color-15);
+  font-size: 14px;
+  font-weight: var(--bold-fs);
+  line-height: 24px;
+}
+
+.modal__disclose-error-warning {
+  color: var(--error-color);
+}
+
+.modal__shortlist-icon {
+  width: 9px;
+  height: 13px;
+  margin-right: 5px;
+
+  @include mobile {
+    margin: 0;
+  }
+}
+
+.modal__shortlist-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  color: var(--primary-color);
+
+  @include mobile {
+    width: auto;
+    height: auto;
+    font-size: 0;
+    background: none;
+  }
+
+  @include mobile {
+    &:hover {
+      background: none;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.manage-admins__table-content-item {
+  display: grid;
+  grid-template-columns: 33% 15% 15% 25% auto;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--secondary-text-color);
+  border-radius: 8px;
+  padding: 16px 0px 16px 20px;
+  border-bottom: 1px solid var(--border-light-color);
+  cursor: pointer;
+  &-img {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    img {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+    }
+    p {
+      font-weight: var(--bold-fs);
+      font-size: var(--paragraph-font-size);
+      line-height: var(--paragraph-line-height);
+      color: var(--primary-color);
+    }
+  }
+  &--companies,
+  &--regions,
+  &--positions {
+    font-weight: var(--bold-fs);
+    font-size: var(--paragraph-font-size);
+    line-height: var(--paragraph-line-height);
+    color: var(--primary-color);
+  }
+  &-dots {
+    display: flex;
+    gap: 23px;
+    button {
+      max-width: 115px;
+    }
+    &--disabled {
+      background-color: var(--bg-secondary-light-color) !important;
+      color: var(--primary-text-color);
+      opacity: 0.5;
+      &:hover {
+        color: var(--primary-text-color);
+        opacity: 0.5;
+      }
+    }
+  }
+  &-dropdown {
+    div {
+      top: 75%;
+      right: -30%;
+      button {
+        color: var(--bg-color-5);
+      }
+    }
+  }
+}

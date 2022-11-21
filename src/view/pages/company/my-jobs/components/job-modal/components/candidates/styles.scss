@@ -1,0 +1,27 @@
+@import '~/view/styles/mixins';
+
+.description__title {
+  margin-bottom: 8px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.description__count {
+  color: var(--secondary-color);
+}
+
+.description__matched-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  overflow: auto;
+  column-gap: 9px;
+  row-gap: 14px;
+
+  @include mobile {
+    height: 50vh;
+    grid-template-columns: 1fr;
+  }
+}

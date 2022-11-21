@@ -1,0 +1,66 @@
+@import '~/view/styles/mixins';
+
+.dropdown {
+  position: absolute;
+  z-index: 3;
+  min-width: 350px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+
+  @include tablet {
+    min-width: unset;
+    width: calc(100% + 2px);
+    top: 105px;
+    left: -1px;
+  }
+}
+
+.dropdown__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+}
+
+.dropdown__filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @include tablet {
+    flex-direction: column;
+  }
+}
+
+.dropdown__input {
+  width: 100%;
+}
+
+.divider {
+  width: 15px;
+  height: 1px;
+  margin: 0 6px;
+  background-color: var(--secondary-color);
+
+  @include tablet {
+    margin: 5px 0;
+    background-color: #fff;
+  }
+}
+
+.dropdown__apply-btn {
+  width: 100%;
+}
+
+.dropdown__checkbox {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+
+  & p {
+    margin-right: 5px;
+  }
+}

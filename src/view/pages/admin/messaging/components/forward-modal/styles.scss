@@ -1,0 +1,24 @@
+.modal {
+  width: 918px;
+
+  &__input {
+    margin-top: 20px;
+  }
+}
+
+.modal__content-wrapper {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #e3e8f1;
+  box-shadow: inset 0px 1px 5px rgba(188, 196, 208, 0.2);
+  border-radius: 6px;
+}
+
+.modal__content-input {
+  width: 100%;
+}
+
+.modal__submit-btn {
+  width: 100%;
+  margin-top: 20px;
+}

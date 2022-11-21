@@ -1,0 +1,99 @@
+@import '~/view/styles/mixins';
+
+.labels {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  width: 100%;
+  margin-bottom: 9px;
+  padding: 0 9px 0 38px;
+
+  @include mobile {
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+}
+
+.labels--flex-start {
+  @include mobile {
+    justify-content: flex-start;
+  }
+}
+
+.labels__item {
+  width: 15%;
+  color: var(--secondary-color);
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: var(--bold-fs);
+
+  &:first-child {
+    width: 20%;
+  }
+
+  @include mobile {
+    width: auto;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.labels__item-status,
+.labels__item-interview,
+.labels__item-approved {
+  width: 13%;
+  margin-left: auto;
+  color: var(--secondary-color);
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: var(--bold-fs);
+
+  @include mobile {
+    width: auto;
+  }
+}
+
+.labels__hide-on-mobile {
+  @include mobile {
+    display: none;
+  }
+}
+
+.labels__show-on-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.tab-content__job-list {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.tab-content__no-matched-message {
+  padding-left: 38px;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--secondary-color);
+}
+
+.labels__item--extra-width {
+  width: 20%;
+}
+
+.labels__hide-on-desk {
+  display: none;
+
+  @include mobile {
+    display: block;
+    visibility: hidden;
+  }
+}
+
+.labels__item--width {
+  @include mobile {
+    width: 10%;
+  }
+}
